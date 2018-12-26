@@ -1,0 +1,32 @@
+{
+   "CantOpenGoogleForConflictExt": {
+      "message": "a conflict extension that may not be able to access Google"
+   },
+   "DisableExtension": {
+      "message": "Disable related programs"
+   },
+   "GoogleProxyIsClose": {
+      "message": "Google proxy has been closed"
+   },
+   "GoogleProxyIsOpen": {
+      "message": "Google proxy has been opened"
+   },
+   "GoogleProxyIsSetting": {
+      "message": "Google proxy is being set up..."
+   },
+   "GoogleScholarAssistant": {
+      "message": "GoogleScholarAssistant"
+   },
+   "ProxyCoverMessage": {
+      "message": "This program proxy has been overwritten and unable to provide Google services"
+   },
+   "SwitchPopup": {
+      "message": "Alt + G can be used to switch Google Scholar Assistant"
+   },
+   "TryLater": {
+      "message": "Google proxy settings failed, please try later"
+   },
+   "WaitMoment": {
+      "message": "Google Proxy is being set up. Please wait a moment..."
+   }
+}

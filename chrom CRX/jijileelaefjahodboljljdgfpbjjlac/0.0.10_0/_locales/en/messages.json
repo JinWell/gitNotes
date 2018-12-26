@@ -1,0 +1,53 @@
+{
+   "appDescription": {
+      "message": " Free to customize your favorite extensions collection, one click to view, delete, enable / disable extensions. And provide common shortcuts."
+   },
+   "appName": {
+      "message": " ExtensionManager"
+   },
+   "bookmarks": {
+      "message": "bookmarks"
+   },
+   "clearBrowserData": {
+      "message": "clearData"
+   },
+   "closeAllExten": {
+      "message": "Close all extensions"
+   },
+   "commonExten": {
+      "message": "Commonly used extensions"
+   },
+   "downloads": {
+      "message": "downloads"
+   },
+   "extenTips": {
+      "message": "Set common extensions, start common extension mode, reduce memory usage"
+   },
+   "extensions": {
+      "message": "extensions"
+   },
+   "history": {
+      "message": "history"
+   },
+   "noMatch": {
+      "message": "No matching extension found, please try another keyword"
+   },
+   "notCommonExten": {
+      "message": "Not commonly used extensions"
+   },
+   "openAllExten": {
+      "message": "Turn on all extensions"
+   },
+   "openCommonExten": {
+      "message": "Turn on common extensions"
+   },
+   "searchPlaceholder": {
+      "message": "Please enter the keyword of  extension name to search extensions"
+   },
+   "settings": {
+      "message": "settings"
+   },
+   "webstore": {
+      "message": "webstore"
+   }
+}

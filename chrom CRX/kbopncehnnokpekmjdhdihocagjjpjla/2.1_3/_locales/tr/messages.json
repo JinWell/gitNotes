@@ -1,0 +1,23 @@
+{
+   "can_be_disabled": {
+      "message": "Extension can be disabled by Chrome on some pages for security reasons."
+   },
+   "download": {
+      "message": "İndir"
+   },
+   "ext_description": {
+      "message": "Zvooq, Facebook, Vimeo, Tidal, SoundCloud ve diğer pek çok siteden çevrimiçi müzik indirici"
+   },
+   "ext_name": {
+      "message": "Free Music Download"
+   },
+   "files": {
+      "message": "Bu sayfadaki müzik dosyaları"
+   },
+   "not_founded": {
+      "message": "Please try to \u003Cspan>start a playback\u003C/span>\u003C/br>\u003Cspan class=\"small\">This will help us to find your file\u003C/span>\u003Cspan class=\"thank\">Thank you for understanding!\u003C/span>"
+   },
+   "reload_me": {
+      "message": "Please refresh the page one time to enable extension on this page."
+   }
+}

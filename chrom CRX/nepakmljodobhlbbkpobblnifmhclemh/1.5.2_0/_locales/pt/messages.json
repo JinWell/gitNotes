@@ -1,0 +1,42 @@
+{
+   "GLOBAL_APP_DESCRIPTION": {
+      "description": "Extension description.",
+      "message": "criar linhas guia  em sites para checar alinhamento."
+   },
+   "GLOBAL_APP_NAME": {
+      "description": "Extension name.",
+      "message": "PageLiner"
+   },
+   "POPUP_ALL_HELPLINES_HEADING": {
+      "description": "Popup table head.",
+      "message": "todas as guias"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+      "description": "Popup table colors.",
+      "message": "cor"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+      "description": "Popup table positions.",
+      "message": "posição"
+   },
+   "POPUP_CLEAR_ALL_HELPLINES": {
+      "description": "Popup action.",
+      "message": "excluir todas as guias"
+   },
+   "POPUP_DONATE": {
+      "description": "Donate link.",
+      "message": "compre-me uma cerveja"
+   },
+   "POPUP_NEW_HELPLINE_X": {
+      "description": "Popup action.",
+      "message": "vertical"
+   },
+   "POPUP_NEW_HELPLINE_Y": {
+      "description": "Popup action.",
+      "message": "horizontal"
+   },
+   "POPUP_TOGGLE_HELPLINES": {
+      "description": "Popup action.",
+      "message": "mostrar/ocultar guias"
+   }
+}

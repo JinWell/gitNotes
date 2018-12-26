@@ -1,0 +1,175 @@
+pre{
+    margin: 0;
+    padding: 0;
+}
+.line{
+	margin: 0;
+	padding: 0;
+}
+body {
+    padding-top: 3px;
+    width: 330px;
+    font-size: 0.8em;
+}
+ol {
+    margin: 0;
+    padding-left: 30px;
+}
+td{
+    vertical-align: top;
+}
+
+
+/* all about link */
+a {
+    text-decoration: none;
+    color: #50799b;
+}
+
+a:hover {
+    color: #1273c4;
+}
+
+#horn:hover {
+    cursor: pointer;
+}
+
+
+/* search area */
+#input {
+    width: 150px;
+}
+
+#jump {
+    position: relative;
+    left: 1em;
+    font-size: 1em;
+}
+
+.invisible {
+    display: none;
+}
+
+
+/* definition area */
+#definition {
+    margin-top: 0.8em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.word {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.color, .word {
+    color: #c82424;
+}
+
+#zh_trans {
+    margin-top: 0.3em;
+}
+
+.part-of-speech {
+    margin-top: 0.3em;
+}
+
+
+/* header and footer */
+#header, #about {
+    text-align: right;
+    line-height: 0;
+}
+
+#logo,
+#logo img,
+#logo a{
+	float: left;
+}
+#logo img{
+	margin-right: 5px;
+	position: relative;
+	top: 0px;
+}
+#header{
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	height: 22px;
+}
+#status{
+	float: right;
+}
+
+
+/* options page */
+#options_content {
+    border-color: #ABD;
+    border-style: solid;
+    border-width: 4px;
+    padding: 8px;
+    margin: 0 auto 0 auto;
+    width: 300px;
+}
+
+#message {
+    position: absolute;
+    top: 1em;
+    background-color: #FEA;
+    font-size: 0.6em;
+}
+
+#return {
+    position: relative;
+    /*left: 8em;*/
+}
+
+h4 {
+    margin: 1em 0 1em 0;
+}
+
+input:focus{
+	outline:none;
+	border: 1px solid #000;
+}
+a:focus{
+	outline:none;
+}
+
+#input{
+	outline:none;
+	margin: 0;
+	border: 1px solid #ccc;
+	padding:3px 5px;
+	margin-right: 5px;
+}
+
+#search_area{
+	height: 24px;
+	position: relative;
+}
+
+#search{
+	position: relative;
+	top: -1px;
+	height: 23px;
+	background: #428bca;
+	border: 1px solid #357ebd;
+	color: #fff;
+}
+#definition td span,
+#definition td img{
+	float: left;
+}
+#tips{
+	margin-top: 10px;
+}
+#word{
+	font-size: 18px;
+	padding-left: 2px;
+	color: #1273c4;
+}
+#about{
+	color:#50799b;
+}

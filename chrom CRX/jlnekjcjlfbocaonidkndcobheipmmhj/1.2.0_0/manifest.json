@@ -1,0 +1,32 @@
+{
+   "background": {
+      "page": "bg.html"
+   },
+   "browser_action": {
+      "default_icon": "icons/new-19.png",
+      "default_popup": "popup.html",
+      "default_title": "视频广告终结者"
+   },
+   "content_scripts": [ {
+      "js": [ "cc.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "zh_CN",
+   "description": "视频广告终结者专用于过滤视频网站烦人的60S片头广告。",
+   "homepage_url": "http://www.adtchrome.com",
+   "icons": {
+      "128": "icons/new-128.png",
+      "16": "icons/new-16.png",
+      "19": "icons/new-19.png",
+      "32": "icons/new-32.png",
+      "48": "icons/new-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqpEx+1gf/YzIWiKVl9pgsRL8+aYFXlQuyT/CoETZ7g6VUx6fMuxR1Ho5Nep/WVlAemgDwdug/3cGh/ShFDPfoBtRiCfotTWyz+/UWA0PSTc1MHd2zFgwUz9SjiV1CtJbEN/fgw4IzNVc7uCUgVvVLGpEoN1H08wnBbBiecs6D+cknuudKCTy0rtrvrBHlklLnSlrxO3c6GgQ48zG36iI1sOmZ/xA7DmrY8CYebeZfvpYuOjxovegt1cr15QFxftiwMjfu45E9OCBBHoXTluVztuJv2Or2Lq1UKmHRN7mhqD+/5C5K6s5eB9Dmp52tRnLtn6a3hHBbPJ/lNjmCopQbQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18.0",
+   "name": "视频广告终结者",
+   "permissions": [ "storage", "management", "proxy", "tabs", "http://*/*", "https://*/*", "contextMenus", "webRequest", "webRequestBlocking", "webNavigation", "unlimitedStorage", "notifications", "browsingData" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.0"
+}

@@ -1,0 +1,20 @@
+var gConfig = {
+    assetsUrl: "https://cdn.vipkdy.com/ext",
+    appName: "vipkdy",
+    server: "https://www.vipkdy.com",
+    ruleServer: "https://www.vipkdy.com",
+    ruleMidPath: "/vz",
+    mnyApi: "/vz/mze.htm",
+    jrServer: "https://www.vipkdy.com",
+    uidp: "/vz/cvi.htm",
+    rulep: "/vz/zom.htm",
+    assetsServer: "https://cdn.vipkdy.com",
+    ver: "5.0.0.41",
+    cl: "chrome-com-vipkdy",
+    pecl: "59998",
+    hostName: "com.vipkdy.vip" + (navigator.userAgent.match(/QQBrowser/) ? ".qq" : ""),
+    pt: "application/x-vipkdy",
+    bdCode: "9d483e9e48ba1faa0dfceaf6333de846",
+    vdir: "",
+    ltime: 1e4
+};

@@ -1,0 +1,102 @@
+{
+   "checkVersionGetUpdateError": {
+      "description": "Notification: Extension Update Error",
+      "message": "获取更新信息失败"
+   },
+   "checkVersionNewVersion": {
+      "description": "Notification: new version detected",
+      "message": "检测到新版本:"
+   },
+   "checkVersionNoNewVersion": {
+      "description": "Notification: no new version detected",
+      "message": "当前已经是最新版本"
+   },
+   "extensionDescription": {
+      "description": "Extension: Description",
+      "message": "哔哩哔哩弹幕网辅助扩展，拥有视频区和直播区的人性化功能"
+   },
+   "extensionName": {
+      "description": "Extension: Name",
+      "message": "哔哩哔哩助手：bilibili.com 综合辅助扩展"
+   },
+   "extensionNotificationExtensionUpdate": {
+      "description": "Notification: Extension Update",
+      "message": "哔哩哔哩助手已自动更新到 v%v!"
+   },
+   "extensionNotificationNewFeatures": {
+      "description": "Notification: New Features",
+      "message": "查看更新内容"
+   },
+   "extensionNotificationTitle": {
+      "description": "Notification: Title",
+      "message": "哔哩哔哩助手提醒"
+   },
+   "extensionNotificationWatch": {
+      "description": "Notification: Watch",
+      "message": "观看"
+   },
+   "extensionShortName": {
+      "description": "Extension: Short Name",
+      "message": "哔哩哔哩助手"
+   },
+   "followingUpdateMessage": {
+      "description": "Notification: Following Update Message",
+      "message": "您的哔哩哔哩关注更新了(%n 个新动态)!\n%uploader 刚刚发布了「%title」!"
+   },
+   "goBili": {
+      "description": "Popup Button: go_bili",
+      "message": "前往 Bilibili.com"
+   },
+   "goBiliLive": {
+      "description": "Popup Button: go_bili_live",
+      "message": "前往 Bilibili Live"
+   },
+   "goBiliShort": {
+      "description": "Popup Button: go_bili",
+      "message": "主站"
+   },
+   "goDynamic": {
+      "description": "Popup Button: go_dynamic",
+      "message": "我的关注"
+   },
+   "goFavourite": {
+      "description": "Popup Button: go_favourite",
+      "message": "我的收藏"
+   },
+   "goOption": {
+      "description": "Popup Button: go_option",
+      "message": "更多选项"
+   },
+   "goVideo": {
+      "description": "Popup Button: go_video",
+      "message": "跳转"
+   },
+   "notLogin": {
+      "description": "Popup Button: not login",
+      "message": "未登录"
+   },
+   "permissionManager_login_description": {
+      "description": "您需要登录Bilibili的账号",
+      "message": "您需要登录Bilibili的账号"
+   },
+   "permissionManager_login_error_massage": {
+      "description": "未登录",
+      "message": "未登录"
+   },
+   "permissionManager_notifications_description": {
+      "description": "需要获得通知功能的权限以便开启相关功能",
+      "message": "需要获得通知功能的权限以便开启相关功能"
+   },
+   "permissionManager_notifications_error_massage": {
+      "description": "未获得通知功能的权限",
+      "message": "未获得通知功能的权限"
+   },
+   "pictureInPictureTitle": {
+      "description": "画中画",
+      "message": "画中画"
+   },
+   "searchBili": {
+      "description": "Context Menu: Title",
+      "message": "使用 哔哩哔哩搜索 '%s'"
+   }
+}

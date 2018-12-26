@@ -1,0 +1,84 @@
+/* 
+    Document   : dict
+    Created on : Dec 16, 2011, 4:47:37 PM
+    Author     : davliu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* dict区域*/
+.dictTitle {
+    font-size: 18px;
+    font-weight:bold;
+    padding-right: 10px;
+}
+.partOfSpeech {
+	font-size: 14px;
+	color:#868686;
+	padding-right: 10px;
+    margin-top:10px;
+}
+.definition {
+    margin-top: 1em;
+}
+.examples li {
+    list-style-type:none;
+    margin-bottom: 12px;
+}
+.examples p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.examples {
+    color:#868686;
+    padding-left:10px;
+}
+.relatedTitle {
+    overflow:hidden;
+    padding-left:20px;
+    margin: 6px 0;
+}
+.relatedTitle li {
+    list-style-type:none;
+    line-height:18px;
+    float: left;
+}
+.dictRectListText {
+    font-size:70%;
+    font-weight:normal;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+}
+.mc_proimg {
+    background: url("image/sound.png") no-repeat;
+	cursor: pointer;
+	margin-bottom:-3px;
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    padding-right: 12px;
+}
+.add_word {
+    background: url("image/book_add.png") no-repeat;
+	cursor: pointer;
+	margin-bottom:-3px;
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    padding-right: 10px;
+}
+.loading {
+    background: url('image/ajax-loader.gif') no-repeat scroll center center;
+    height:16px;
+}
+/* custom, style for dict end */
+#vendor:link              { color:#ccc; text-decoration:none; }
+#vendor:visited           { color:#ccc; text-decoration:none; }
+#vendor:hover             { color:#666; text-decoration:none; }
+#vendor:active            { color:red; text-decoration:none; }

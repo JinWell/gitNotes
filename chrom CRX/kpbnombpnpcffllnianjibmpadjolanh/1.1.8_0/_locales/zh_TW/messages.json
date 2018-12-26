@@ -1,0 +1,138 @@
+{
+   "adModeOff": {
+      "description": "Popup Button: ad_mode_off",
+      "message": "進入點廣告模式"
+   },
+   "adModeOn": {
+      "description": "Popup Button: ad_mode_on",
+      "message": "離開點廣告模式"
+   },
+   "checkVersionGetUpdateError": {
+      "description": "Notification: Extension Update Error",
+      "message": "獲取更新信息失敗"
+   },
+   "checkVersionNewVersion": {
+      "description": "Notification: new version detected",
+      "message": "檢測到新版本:"
+   },
+   "checkVersionNoNewVersion": {
+      "description": "Notification: no new version detected",
+      "message": "當前已經是最新版本"
+   },
+   "extensionDescription": {
+      "description": "Extension: Description",
+      "message": "嗶哩嗶哩彈幕網輔助擴充套件，擁有視訊區和直播區的人性化功能"
+   },
+   "extensionName": {
+      "description": "Extension: Name",
+      "message": "嗶哩嗶哩助手：bilibili.com 綜合輔助擴充套件"
+   },
+   "extensionNotificationExtensionUpdate": {
+      "description": "Notification: Extension Update",
+      "message": "嗶哩嗶哩助手已自動更新到 v%v!"
+   },
+   "extensionNotificationLiveOn": {
+      "description": "Notification: Live On",
+      "message": "開播啦"
+   },
+   "extensionNotificationNewFeatures": {
+      "description": "Notification: New Features",
+      "message": "檢視更新內容"
+   },
+   "extensionNotificationShowAll": {
+      "description": "Notification: Show All",
+      "message": "顯示全部"
+   },
+   "extensionNotificationTitle": {
+      "description": "Notification: Title",
+      "message": "嗶哩嗶哩助手提醒"
+   },
+   "extensionNotificationWatch": {
+      "description": "Notification: Watch",
+      "message": "觀看"
+   },
+   "extensionNotificationWatchLater": {
+      "description": "Notification: Watch Later",
+      "message": "稍後觀看"
+   },
+   "extensionShortName": {
+      "description": "Extension: Short Name",
+      "message": "嗶哩嗶哩助手"
+   },
+   "followingUpdateMessage": {
+      "description": "Notification: Following Update Message",
+      "message": "您的嗶哩嗶哩關注更新了(%n 個新動態)!\n%uploader 剛剛釋出了「%title」!"
+   },
+   "goBili": {
+      "description": "Popup Button: go_bili",
+      "message": "一鍵前往bilibili.com"
+   },
+   "goBiliLive": {
+      "description": "Popup Button: go_bili_live",
+      "message": "一鍵前往Bilibili Live"
+   },
+   "goDynamic": {
+      "description": "Popup Button: go_dynamic",
+      "message": "我的關注"
+   },
+   "goFavourite": {
+      "description": "Popup Button: go_favourite",
+      "message": "我的收藏"
+   },
+   "goOption": {
+      "description": "Popup Button: go_option",
+      "message": "更多選項"
+   },
+   "goSubscription": {
+      "description": "Popup Button: go_subscription",
+      "message": "我訂閱的"
+   },
+   "goVideo": {
+      "description": "Popup Button: go_video",
+      "message": "跳轉"
+   },
+   "nNewUpdate": {
+      "description": "Popup Button: new_update",
+      "message": "(%n個更新)"
+   },
+   "notLogged": {
+      "description": "Popup Button: not_logged",
+      "message": "(未登入)"
+   },
+   "notLogin": {
+      "description": "Popup Button: not login",
+      "message": "未登錄"
+   },
+   "notificationGetTv": {
+      "description": "Notification: Get TV",
+      "message": "前往參加"
+   },
+   "optionPage": {
+      "description": "Option Page: Title",
+      "message": "選項頁"
+   },
+   "permissionManager_login_description": {
+      "description": "您需要登錄Bilibili的賬號",
+      "message": "您需要登錄Bilibili的賬號"
+   },
+   "permissionManager_login_error_massage": {
+      "description": "未登錄",
+      "message": "未登錄"
+   },
+   "permissionManager_notifications_description": {
+      "description": "需要獲得通知功能的權限以便開啟相關功能",
+      "message": "需要獲得通知功能的權限以便開啟相關功能"
+   },
+   "permissionManager_notifications_error_massage": {
+      "description": "未獲得通知功能的權限",
+      "message": "未獲得通知功能的權限"
+   },
+   "pictureInPictureTitle": {
+      "description": "畫中畫",
+      "message": "畫中畫"
+   },
+   "searchBili": {
+      "description": "Context Menu: Title",
+      "message": "用 嗶哩嗶哩 搜尋 “%s”"
+   }
+}

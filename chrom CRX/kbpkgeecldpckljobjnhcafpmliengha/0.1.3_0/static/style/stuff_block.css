@@ -1,0 +1,136 @@
+.people_info_stuff_block{
+	display: inline;
+	position: relative;
+	float: left;
+	width: 70px;
+	height: 80px;
+}
+.people_info_stuff_block .arrow_block{
+	position: absolute;
+	width: 75px;
+	padding: 5px;
+	left: -7px;
+	bottom:85px;
+	border-radius: 5px;
+	background-color: #545454;
+	color: #ffffff;
+	display: none;
+}
+.people_info_stuff_block .arrow_block_container{
+	position: relative;
+}
+.people_info_stuff_block .arrow{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: #545454;
+	left: 27px;
+	bottom: -13px;
+	*bottom:-9px;
+}
+.people_info_stuff_block .name{
+	display: block;
+	position: relative;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+}
+.people_info_stuff_block .duoc_square_pop_goal_stars{
+	display: block;
+	position: relative;
+	width:75px;
+	height: 15px;
+	background-image:url(/static/img/header.png);
+	background-position:-85px -120px;
+}
+.people_info_stuff_img{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 15px;
+	left: 10px;
+	border-radius: 15px;
+}
+.people_info_stuff_img a{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	line-height: 15px;
+	font-size: 14px;
+	background-image:url(/static/img/header.png);
+	background-position:0px -220px;
+	border-radius: 15px;
+}
+.people_info_stuff_a{
+	color: #232323;
+	font-size: 14px;
+	line-height: 20px;
+}
+.people_info_stuff_footer{
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	bottom: 0px;
+	left: 0px;
+	background-image:url(/static/img/header.png);
+	background-position:0px -270px;
+}
+.people_info_stuff_plane{
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	line-height: 20px;
+	top: 20px;
+	left: 70px;
+}
+.people_info_stuff_plane_name{
+	width: 90px;
+	height: 20px;
+	font-size: 14px;
+	color: #333333;
+	overflow: hidden;
+}
+.people_info_stuff_plane_goal{
+	width: 90px;
+	height: 20px;
+	font-size: 12px;
+	color: #8f8f8f;
+	overflow: hidden;
+}
+.people_info_stuff_star{
+	height:15px;
+	background-image:url(/static/img/header.png);
+	background-position:-40px -65px;
+}
+.people_info_stuff_stars{
+	width: 75px;
+	height:15px;
+	background-image:url(/static/img/header.png);
+	background-position:-260px -65px;
+}
+.people_info_stuff_del{
+	display: none;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	left: 145px;
+	background-image:url(/static/img/header.png);
+	background-position:-170px -70px;
+	cursor: pointer;
+}
+#people_info_stuff .people_info_stuff_block{
+	width: 80px;
+}
+#people_info_stuff .people_info_stuff_plane{
+	display: none;
+}
+#people_info_stuff .people_info_stuff_del{
+	left: 60px;
+}

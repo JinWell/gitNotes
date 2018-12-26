@@ -1,0 +1,11 @@
+{
+   "context_title": {
+      "message": "使用迅雷下載"
+   },
+   "description": {
+      "message": "迅雷下載支持，讓您在Chrome瀏覽器中點擊下載鏈接時，快速的調起迅雷客戶端進行下載。"
+   },
+   "name": {
+      "message": "迅雷下載支持"
+   }
+}

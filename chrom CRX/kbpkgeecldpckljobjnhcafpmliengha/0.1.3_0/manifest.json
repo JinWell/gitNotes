@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "bg.html"
+   },
+   "browser_action": {
+      "default_icon": "duoc.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "这是一款健康提醒的插件。你只需在多C网（www.duoc.cn）上跟随感兴趣的生活方式，或者创建自己独有的健康生活方式，就能通过本插件获得个性化的提醒，还能发现和分享对生活有帮助的绿色环保的商品，从而有助你养成良好的生活习惯，让你多活10年。",
+   "homepage_url": "http://www.duoc.cn",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/cDwQhxI+pnY+h9Pb4oGOD+EG89LZrivvwXcHRysycJb1W/ad2m6wk8o0T1+diRiMWXKpz7zOW1FiAIb6b8d/03U3HoMzM/m/BIufE4/LarJnv2ww+AIGGokKZ3ZFybD79vYUecBtEx3oeHFIB4q+Qaw12Ij0Wr98TsP0eQbRtwIDAQAB",
+   "manifest_version": 2,
+   "name": "多活十年-多C健康提醒",
+   "offline_enabled": false,
+   "permissions": [ "tabs", "storage", "cookies", "notifications", "unlimitedStorage", "*://*.duoc.cn/", "*://*.upaiyun.com/" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1.3",
+   "web_accessible_resources": [ "duoc.png" ]
+}

@@ -1,0 +1,1 @@
+window.location.replace("https://www.2345.com/?38690");

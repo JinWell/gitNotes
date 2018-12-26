@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting Started Extension's Popup</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+	  font: 12px/20px arial, helvetica, verdana, tahoma, sans-serif;
+    }
+	.main {
+		margin: 1px;
+		padding: 4px 6px;
+		padding-bottom: 9px;
+		-webkit-border-radius: 2px;
+	}
+    .item {
+		padding: 4px 10px;
+		-webkit-padding-start: 6px;
+		margin: 0px 2px;
+		white-space: nowrap;
+		cursor: pointer;
+		color: #345;
+    }
+    .item:hover {
+		padding: 3px 9px;
+		-webkit-padding-start: 5px;
+		border: solid 1px #bcd;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, 
+		color-stop(0, #fff),  color-stop(0.4, hsl(215, 67%, 97%)), color-stop(0.41, hsl(213, 48%, 95%)));
+	}
+	.line {
+		height: 0px;
+		margin: 3px 2px;
+		border: 0;
+		border-top: 1px solid #DDD;
+	}
+    </style>
+	<div class="main">
+		<div class="item" id="remove-add">无广告播放当前视频</div>
+		<div class="line"></div>
+		<div class="item" id="hot-movie">精选电影</div>
+	</div>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+

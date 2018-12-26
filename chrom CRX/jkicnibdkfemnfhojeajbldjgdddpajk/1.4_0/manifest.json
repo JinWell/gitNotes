@@ -1,0 +1,49 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "16": "images/icon16.png",
+         "19": "images/icon19.png",
+         "48": "images/icon48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "谷歌学术助手"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "show or hide popup page",
+         "suggested_key": {
+            "default": "Alt+G"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "include_globs": [ "http?://www.google.*/", "http?://www.google.*/#hl=*", "http?://www.google.*/search*", "http?://www.google.*/webhp?hl=*", "https://encrypted.google.*/", "https://encrypted.google.*/#hl=*", "https://encrypted.gogole.*/search*", "https://encrypted.google.*/webhp?hl=*", "http?://ipv6.google.com/", "http?://ipv6.google.com/search*" ],
+      "js": [ "RemoveGoogleRedirect.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "zh_CN",
+   "description": "谷歌学术助手(Google Scholar Assistant) 为中国人开发的Google学术助手",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "19": "images/icon19.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvxyvZsGdnKX5Qp13+Aj2XExBgwPBVjSH1iIOegkTwVw2qz937MtNG7oyQa/x3EJ1964L9LHlPvHi6yFWqgV4+kFgo3sfpwHzbWr5I7j9F0Lf/ypveNJGzZb+GzedI1Oc3htzilYjF7N3cKRLzMP5u9geb3vZXTBN/M5pGz9HU3ISULB8CbjqBQhQOV0o14H5LdMRqn4h1/4QWgGqu1oOjZZnRAd+qfyXKnwIlNmVSatTSU7IGqrymk9Hk4dkJPILPEbuaiDDJfY/dcskA6WZIdry+e2+SvdqNdw7Gmb+3cHtEFxtaoNxvtQfmNqwYlsLB7V9fEHk0Cw/735gpEgn/wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "30",
+   "name": "谷歌学术助手",
+   "offline_enabled": true,
+   "permissions": [ "contextMenus", "management", "notifications", "proxy", "storage", "tabs", "unlimitedStorage", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
+   "short_name": "谷歌学术助手(Google Scholar Assistant)",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4"
+}

@@ -1,0 +1,42 @@
+{
+   "GLOBAL_APP_DESCRIPTION": {
+      "description": "Extension description.",
+      "message": "Hilfslinien auf Webseiten setzen um z.B. Fluchten zu prüfen."
+   },
+   "GLOBAL_APP_NAME": {
+      "description": "Extension name.",
+      "message": "PageLiner"
+   },
+   "POPUP_ALL_HELPLINES_HEADING": {
+      "description": "Popup table head.",
+      "message": "alle Hilfslinien"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+      "description": "Popup table colors.",
+      "message": "Farbe"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+      "description": "Popup table positions.",
+      "message": "Position"
+   },
+   "POPUP_CLEAR_ALL_HELPLINES": {
+      "description": "Popup action.",
+      "message": "alle Hilfslinien löschen"
+   },
+   "POPUP_DONATE": {
+      "description": "Donate link.",
+      "message": "Buy me a beer"
+   },
+   "POPUP_NEW_HELPLINE_X": {
+      "description": "Popup action.",
+      "message": "vertikal"
+   },
+   "POPUP_NEW_HELPLINE_Y": {
+      "description": "Popup action.",
+      "message": "horizontal"
+   },
+   "POPUP_TOGGLE_HELPLINES": {
+      "description": "Popup action.",
+      "message": "Hilfslinien anzeigen/ausblenden"
+   }
+}

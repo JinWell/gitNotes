@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lookup</title>
+    <link rel="stylesheet" href="/lookup.css">
+</head>
+
+<body>
+    <div id="yddWrapper">
+        <div id="langeasyContainer">
+            <h4 id="langeasyTitle">
+                <a href="https://langeasy.com.cn" class="icon_logo"></a><a href="https://langeasy.com.cn">不背单词</a>
+                <a href="#" id="langeasyAddNeword">添加到生词本</a><span id="langeasyAlreadyNewWord">已添加到生词</span>
+                <a href="https://langeasy.com.cn/denglu.action" target="_blank" id="langeasyLogin">登录</a></h4>
+            <!--<div id="langeasyDefinition">-->
+            <!--没有找到找到该单词-->
+            <!--</div>-->
+            <div id="langeasyDefinition">
+                <div id="langeasyTip">发音不存在</div>
+                <div id="langeasyWord">word</div>
+                <table border="none">
+                    <tbody>
+                        <tr>
+                            <td>英音：</td>
+                            <td><span id="uk_pron">ɡud</span><span type="UK" class="langeasy_icon_audio" alt="good"></span></td>
+                        </tr>
+                        <tr>
+                            <td>美音：</td>
+                            <td><span id="us_pron">ɡʊd</span><span src="audio.png" type="US" class="langeasy_icon_audio" alt="good"></span></td>
+                        </tr>
+                        <tr>
+                            <td>词义：</td>
+                            <td>
+                                <div id="interpret">
+                                    <p class="line">n. 善行，好处</p>
+                                    <p class="line">adj. 好的，优良的，上等的</p>
+                                    <p class="line">[pl.]商品</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <audio id="langeasyAudio"></audio>
+        </div>
+    </div>
+</body>
+<script>function newWordState(){var e=new XMLHttpRequest;e.onreadystatechange=function(){if(4==e.readyState&&200==e.status){JSON.parse(e.responseText)}},e.open("GET","https://langeasy.com.cn/getNewWord.action?word="+oWord.innerHTML+"&infoidx=100",!0),e.send()}function pop(e){return e.stopPropagation(),!1}function closePopBox(){oWrap.style.display="none"}function insertNewWord(){var e={};e.word=oWord.innerHTML,e.course="*",e.wordidx="*",e.infoidx="100",e.selection="*",e.info="*",e.opcode="1",e=JSON.stringify(e);var n=new XMLHttpRequest;n.onreadystatechange=function(){if(4==n.readyState&&200==n.status){var e=document.getElementById("langeasyAlreadyNewWord"),t=document.getElementById("langeasyAddNeword"),o=document.getElementById("langeasyLogin");t.style.display="none",o.style.display="none",e.style.display="block"}},n.open("POST","https://langeasy.com.cn/insertNewWord.action",!0),n.setRequestHeader("Content-type","application/x-www-form-urlencoded"),n.send("newwordlist="+e)}function showMsg(e){var n=document.querySelector("#langeasyWord");clearTimeout(n.timer),n.innerHTML=e,n.style.display="block",n.timer=setTimeout(function(){n.innerHTML="",n.style.display="none"},3e3)}function doSound(e){var n=e.target;if("langeasy_icon_audio"==n.className){var t=document.querySelector("#langeasyAudio"),o=document.querySelector("#langeasyWord"),d=n.getAttribute("type"),r=o.innerHTML,a="https://langeasy.com.cn/speeches/"+d+"/"+d+"-speech/"+r+".mp3";t.src=a,t.setAttribute("autoplay","true"),t.onerror=function(){showMsg("发音不存在")}}}var oWrap=document.getElementById("yddWrapper"),oWord=document.querySelector("#langeasyWord"),oLangeasyAddNeword=document.getElementById("langeasyAddNeword");document.addEventListener("click",doSound,!1),document.addEventListener("mouseover",doSound,!1),document.addEventListener("click",closePopBox,!1),oWrap.addEventListener("click",pop,!1),oLangeasyAddNeword.addEventListener("click",insertNewWord,!1),newWordState();</script>
+
+</html>

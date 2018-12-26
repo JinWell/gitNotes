@@ -1,0 +1,1 @@
+chrome.runtime.sendMessage({reqtype:"get-script"},function(response){response&&response.cscripts.length>0&&eval(response.cscripts)});

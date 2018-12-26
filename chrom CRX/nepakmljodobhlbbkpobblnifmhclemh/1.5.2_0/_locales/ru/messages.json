@@ -1,0 +1,42 @@
+{
+   "GLOBAL_APP_DESCRIPTION": {
+      "description": "Extension description.",
+      "message": "Размещение направляющих линий на веб страницах."
+   },
+   "GLOBAL_APP_NAME": {
+      "description": "Extension name.",
+      "message": "PageLiner"
+   },
+   "POPUP_ALL_HELPLINES_HEADING": {
+      "description": "Popup table head.",
+      "message": "все линии"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+      "description": "Popup table colors.",
+      "message": "цвет"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+      "description": "Popup table positions.",
+      "message": "положение"
+   },
+   "POPUP_CLEAR_ALL_HELPLINES": {
+      "description": "Popup action.",
+      "message": "удалить все линии"
+   },
+   "POPUP_DONATE": {
+      "description": "Donate link.",
+      "message": "пожертвовать программисту на водку"
+   },
+   "POPUP_NEW_HELPLINE_X": {
+      "description": "Popup action.",
+      "message": "вертикальная"
+   },
+   "POPUP_NEW_HELPLINE_Y": {
+      "description": "Popup action.",
+      "message": "горизонтальная"
+   },
+   "POPUP_TOGGLE_HELPLINES": {
+      "description": "Popup action.",
+      "message": "показать / спрятать все линии"
+   }
+}

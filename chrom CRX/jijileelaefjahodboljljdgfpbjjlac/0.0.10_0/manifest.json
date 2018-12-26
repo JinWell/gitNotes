@@ -1,0 +1,40 @@
+{
+   "background": {
+      "scripts": [ "background/background.main.js" ]
+   },
+   "browser_action": {
+      "default_icon": "static/images/icon_128.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_appName__"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "global": true,
+         "suggested_key": {
+            "chromeos": "Ctrl+M",
+            "linux": "Ctrl+M",
+            "mac": "Command+M",
+            "windows": "Ctrl+M"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content/content.main.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "zh_CN",
+   "description": "__MSG_appDescription__",
+   "homepage_url": "https://github.com/zangse/vue-chrome-extension",
+   "icons": {
+      "128": "static/images/icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnElK67Uk/462Psh+LNp3jP7bkSIdIBdIpWDUNcVGfZHP96i4mu9PJ4EAS7EsxYV+c24jyY52tKSM60IRIU3elZLT6R2AAEy/eJI9vd/V45oeXjdQn/PLjSnAKFm9nlNEyoWZLcjDbHAwmPnHhC62Y1nBsdBOZLuR48ZJ4AdAtZBS9P0Q+K4AIPs6nXn610YNqvgo2THoZeVFqDo8GnGMxGmmHuGD16urUjksNrphpX+hai9w/592DSfVCcaraAPNb4Pj/EYCL/3j0159hFujTcf2kfVrzoonvC8EskbmLuj0eVjUjuHtXxKcWAX4RVknHrR/KW4SkoDdJCluVLyW9QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "tabs", "management", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.10"
+}

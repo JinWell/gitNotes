@@ -1,0 +1,34 @@
+/*uc浏览器下必须在可是区域flash才执行加载*/
+#vipkdy-parser-iframe{position:fixed;top:10px;z-index:9999999;width:1px;height:1px;}
+.kdy-icon{width:20px;height:20px;fill:currentColor;overflow:hidden;}
+.kdy-icon-success{color:green;}
+.kdy-icon-error{color:red;}
+.vip-fl{float:left;}
+.vip-fr{float:right;}
+.vip-header{background-color:#eee;padding:4px 10px;border-bottom:1px solid #999;overflow:hidden;}
+.vip-msg-main{position:absolute;z-index:9999999;width:16em;top:30px;right:30px;background:#fff;color:#555;box-shadow:0px 0px 6px 0px;font-size:13px;line-height:18px;margin:0 auto;font-family:微软雅黑;display:block;}
+.vip-btn-wrapper{cursor:pointer;}
+.vip-btn{display:inline-block;height:20px;padding:1px;}
+.vip-btn:hover{color:green;background-color:#fff;border-radius:11px;}
+.vip-msg-main img{vertical-align:middle;display:inline;margin-right:2px;}
+.vip-status{position:relative;top:1px;}
+.vip-pay-tip{display:none;padding:4px 10px;border-bottom:1px solid rgb(102,102,102);}
+.vip-pay-tip-active{display:block;}
+.vip-pay-tip strong{color:red;}
+.btn-parse{cursor:pointer;}
+.vip-tip{background-color:#eee;font-size:12px;padding:4px 10px;}
+.vip-tip div{font-size:12px;line-height:18px;}
+.vip-tip a{color:#699f00;}
+.vip-msg-main.parsers-hidden .vip-btn[data-action="hide-parsers"]{display:none;}
+.vip-msg-main.parsers-showed .vip-btn[data-action="show-parsers"]{display:none;}
+.vip-parsers-list{border-bottom:1px solid #666;padding:4px 10px;line-height:1.6;text-indent:10px;}
+.vip-msg-main.parsers-hidden .vip-parsers-list{display:none;}
+.vip-msg-main.parsers-showd .vip-parsers-list{display:block;}
+.vip-parser-item{border-bottom:1px solid #eee;cursor:pointer;}
+.vip-parser-item:hover{color:#000;background-color:#FFFFCC;}
+.vip-parser-item-parsing{background-color:#FFFFCC;}
+.vip-parser-item-cur{background-color:#328BCD!important;color:#fff!important;}
+.vip-msg-error{color:red;}
+#dplayer-vip{width:100%;height:100%;}
+.vip-parsed .vipFloatbgCls{display:none;}
+body[class*='qypage'].vip-parsed  div[style*='z-index: 2; overflow: hidden; visibility: visible;']{display:none !important;}

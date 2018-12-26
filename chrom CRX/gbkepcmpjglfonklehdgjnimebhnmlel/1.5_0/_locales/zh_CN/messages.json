@@ -1,0 +1,56 @@
+{
+   "errorIdNotForm": {
+      "message": "ID为`$1`的元素不是表单"
+   },
+   "errorIdNotFound": {
+      "message": "ID为`$1`的元素未找到"
+   },
+   "errorNoExtensionAccess": {
+      "message": "此扩展无法接管代理设置"
+   },
+   "errorNotAllowedForIncognito": {
+      "message": "设置成功，建议在隐身模式下启用此扩展"
+   },
+   "errorOtherExtensionControls": {
+      "message": "代理设置正在被其他扩展控制，更多细节请检查chrome://extensions"
+   },
+   "errorPopupTitle": {
+      "message": "错误码: $1"
+   },
+   "errorProxyDetailedError": {
+      "message": "代理错误: $1. $2."
+   },
+   "errorProxyError": {
+      "message": "代理错误: $1."
+   },
+   "errorSettingIncognitoProxy": {
+      "message": "隐身模式下代理设置已失败"
+   },
+   "errorSettingRegularProxy": {
+      "message": "代理设置已失败"
+   },
+   "extDescription": {
+      "message": "实现Chrome账号同步和扩展自动更新。"
+   },
+   "extName": {
+      "message": "Chrome同步助手"
+   },
+   "inputDefault": {
+      "message": "默认"
+   },
+   "saveSettings": {
+      "message": "保存设置"
+   },
+   "successfullySetProxy": {
+      "message": "代理设置已成功"
+   },
+   "tipMessage": {
+      "message": "无"
+   },
+   "usePAC": {
+      "message": "自动配置代理(PAC)"
+   },
+   "useSystemSettings": {
+      "message": "系统代理"
+   }
+}

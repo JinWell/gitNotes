@@ -1,0 +1,53 @@
+{
+   "appDescription": {
+      "message": " 自由定制你常用的扩展集合，一键查看、删除、启用/禁用扩展。并提供常用快捷方式。 "
+   },
+   "appName": {
+      "message": " 扩展管理 "
+   },
+   "bookmarks": {
+      "message": "书签管理"
+   },
+   "clearBrowserData": {
+      "message": "清除数据"
+   },
+   "closeAllExten": {
+      "message": "关闭所有扩展"
+   },
+   "commonExten": {
+      "message": "常用扩展"
+   },
+   "downloads": {
+      "message": "下载管理"
+   },
+   "extenTips": {
+      "message": "设置常用扩展,启动常用扩展模式,减少内存占用"
+   },
+   "extensions": {
+      "message": "扩展管理"
+   },
+   "history": {
+      "message": "历史记录"
+   },
+   "noMatch": {
+      "message": "没有搜到匹配的扩展，换个关键词试试"
+   },
+   "notCommonExten": {
+      "message": "不常用扩展"
+   },
+   "openAllExten": {
+      "message": "开启所有扩展"
+   },
+   "openCommonExten": {
+      "message": "开启常用扩展"
+   },
+   "searchPlaceholder": {
+      "message": "请输入扩展名称关键词搜索扩展"
+   },
+   "settings": {
+      "message": "设置"
+   },
+   "webstore": {
+      "message": "应用商店"
+   }
+}

@@ -1,0 +1,62 @@
+#arc_toolbar_report .ops .share {
+  width: 90px; }
+
+#arc_toolbar_report .ops .bilibili-helper {
+  position: relative; }
+
+#arc_toolbar_report > .tb-line, #arc_toolbar_report .app-download {
+  display: none; }
+
+#arc_toolbar_report > .bilibili-helper {
+  display: inline-block;
+  width: 170px;
+  height: 80px;
+  line-height: 80px;
+  float: left; }
+  #arc_toolbar_report > .bilibili-helper > span {
+    user-select: none;
+    cursor: pointer; }
+    #arc_toolbar_report > .bilibili-helper > span span {
+      color: #000;
+      display: inline-block;
+      font-size: 16px;
+      height: 50px;
+      line-height: 68px; }
+  #arc_toolbar_report > .bilibili-helper .bilibili-helper-content {
+    right: -1px;
+    top: 80px;
+    box-shadow: none;
+    border-radius: 0; }
+
+#bangumi_detail .info-title > a h2 {
+  width: auto !important;
+  max-width: 300px !important;
+  min-width: 170px !important; }
+
+#bangumi_detail .info-title .func-module {
+  display: flex; }
+  #bangumi_detail .info-title .func-module > * {
+    order: 1; }
+  #bangumi_detail .info-title .func-module .bilibili-helper {
+    order: 0;
+    display: inline-block;
+    width: auto;
+    height: 28px;
+    margin: 0 20px 0 0;
+    padding: 0;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #6d757a; }
+    #bangumi_detail .info-title .func-module .bilibili-helper:hover {
+      color: #00a1d6;
+      border-color: #00a1d6; }
+    #bangumi_detail .info-title .func-module .bilibili-helper > span {
+      cursor: pointer;
+      user-select: none; }
+      #bangumi_detail .info-title .func-module .bilibili-helper > span .iconfont {
+        display: none; }
+    #bangumi_detail .info-title .func-module .bilibili-helper .bilibili-helper-content {
+      top: 40px;
+      right: 200px; }
+

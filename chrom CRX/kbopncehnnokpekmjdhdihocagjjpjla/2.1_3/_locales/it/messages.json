@@ -1,0 +1,17 @@
+{
+   "download": {
+      "message": "Scaricare"
+   },
+   "ext_description": {
+      "message": "Downloader di musica online da Zvooq, Facebook, Vimeo, Tidal, SoundCloud e molti altri siti"
+   },
+   "ext_name": {
+      "message": "Scarica musica gratis"
+   },
+   "files": {
+      "message": "File musicali in questa pagina"
+   },
+   "not_founded": {
+      "message": "Please try to \u003Cspan>start a playback\u003C/span>\u003C/br>\u003Cspan class=\"small\">This will help us to find file\u003C/span>\u003Cspan class=\"thank\">Thank you for understanding!\u003C/span>"
+   }
+}

@@ -1,0 +1,1 @@
+var port=chrome.extension.connect();window.addEventListener("message",function(a){a.source==window&&a.data.type&&port.postMessage({message:a.data.type,values:a.data.text})},!1);

@@ -1,0 +1,30 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "image/icon.png",
+      "name": "打开背单词Online"
+   },
+   "content_scripts": [ {
+      "js": [ "js/contentscript1.js" ],
+      "matches": [ "http://wordmemo.sinaapp.com/*", "http://www.wordmemo.com/*", "http://wordmemo.com/*" ]
+   }, {
+      "js": [ "js/contentscript2.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "背单词online助手,监控复习临界点单词，及时提醒复习；划词查询；生词收集",
+   "icons": {
+      "128": "image/icon128.png",
+      "16": "image/icon16.png",
+      "48": "image/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC94PIIrpUdmW85dQTrJYpg96Zgrspv5v9iPzOHw5wSz6gvuHKXYtWvXSAqPPJbyUSyejyc2LegXTRMycGkKNSiTdtrYgzR5HZS+d7vcLT45FyyWJma4wTvQgqHT8TLMEJixXe4ffC/OUkmbuHmzG8XL1FdM34ORsTF3HXWXeP5eQIDAQAB",
+   "manifest_version": 2,
+   "name": "背单词online助手",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "contextMenus", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.4"
+}

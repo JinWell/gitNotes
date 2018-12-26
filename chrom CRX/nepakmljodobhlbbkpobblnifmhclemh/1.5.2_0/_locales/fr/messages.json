@@ -1,0 +1,42 @@
+{
+   "GLOBAL_APP_DESCRIPTION": {
+      "description": "Extension description.",
+      "message": "Mettre les lignes supplémentaire dans le site web (p. ex. pour contrôler les points de fuite)."
+   },
+   "GLOBAL_APP_NAME": {
+      "description": "Extension name.",
+      "message": "PageLiner"
+   },
+   "POPUP_ALL_HELPLINES_HEADING": {
+      "description": "Popup table head.",
+      "message": "Tout les lignes supplémentaire"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+      "description": "Popup table colors.",
+      "message": "Couleur"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+      "description": "Popup table positions.",
+      "message": "Position"
+   },
+   "POPUP_CLEAR_ALL_HELPLINES": {
+      "description": "Popup action.",
+      "message": "supprimer les lignes supplémentaire"
+   },
+   "POPUP_DONATE": {
+      "description": "Donate link.",
+      "message": "M'acheter une bière"
+   },
+   "POPUP_NEW_HELPLINE_X": {
+      "description": "Popup action.",
+      "message": "vertical"
+   },
+   "POPUP_NEW_HELPLINE_Y": {
+      "description": "Popup action.",
+      "message": "horizontal"
+   },
+   "POPUP_TOGGLE_HELPLINES": {
+      "description": "Popup action.",
+      "message": "afficher/masquer"
+   }
+}

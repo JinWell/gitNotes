@@ -1,0 +1,32 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "src/bg/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon_pl_19x19.png",
+      "default_popup": "src/page_action/page_action.html",
+      "default_title": "__MSG_GLOBAL_APP_NAME__"
+   },
+   "content_scripts": [ {
+      "css": [ "src/inject/inject.css" ],
+      "matches": [ "https://*/*", "http://*/*" ]
+   }, {
+      "js": [ "js/jquery/jquery.min.js", "js/jquery/jquery-ui.min.js", "js/jquery/jquery.ui.touch-punch.min.js", "src/inject/inject.js" ],
+      "matches": [ "https://*/*", "http://*/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_GLOBAL_APP_DESCRIPTION__",
+   "icons": {
+      "128": "icons/icon_pl_128x128.png",
+      "16": "icons/icon_pl_16x16.png",
+      "48": "icons/icon_pl_48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA21weEXjpsKRLLG9wiiqQAY38GUIu9ia9ucFHvGRIuOu+I4DpUF+P4eOOcdrHqTmibYU9KWoLh8XUI5JmVvgtvk9ypP2hpqoDgzoV/ITXOh/wVO5JePxiCKeiSQUpDW6UmcpWhr9Dt7msgNOXGCodd80ZM+9n+YwEjeUvT16CtsylFTtqHqiYKxjiWVdEAQWDKytChGYq6jClmDIEybvEuq2PSXK53IH5tmwGmzzIyXeuM4jk5UADlLcB37q4iOf9IujS8+TqxeIFuTAyCToe2+xdzg2/+rQdNaXzRzKDIwbicXTWB4AkK70Pp++xSFlwHF8xzpUwcQ2LIOAMqltYrwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_GLOBAL_APP_NAME__",
+   "permissions": [ "tabs", "activeTab", "storage", "https://*/*", "http://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.2",
+   "web_accessible_resources": [ "/js/jquery/jquery.min.map" ]
+}

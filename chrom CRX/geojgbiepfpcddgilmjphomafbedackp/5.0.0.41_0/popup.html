@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+
+<body>
+<div class="tab tab1">
+    <div class="ver">5.0.0.41</div>
+    <div class="hd">
+        <span class="btn-config active">功能设置</span>
+        <span class="btn-history">观影历史</span>
+    </div>
+    <div class="box1">
+        <div class="closeExt-wrp">
+            <span class="tip">开启VIP账号共享功能</span>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch-closeExt" configName="autoFanli" class="onoffswitch-checkbox" id="myonoffswitch-closeExt" checked>
+                <label class="onoffswitch-label" for="myonoffswitch-closeExt">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+        <div class="pattern-wrp">
+            <div>
+                <span class="radio pattern-tradition" pattern="traditon"><i></i></span>启用传统模式
+            </div>
+            <div class="pattern-txt1" style="color: #ff0000;margin-top: 3px;display: none;">如视频广告拦截失败，请启用优化模式</div>
+            <div>
+                <span class="radio pattern-modern" pattern="modern"><i></i></span>启用优化模式
+            </div>
+        </div>
+        <!-- <div class="ewm-wrp" style="position: absolute;right: 5px;bottom: 0;width: 92px;height: 120px;background: url(img/ewm.png) no-repeat;"></div> -->
+    </div>
+    <div class="box2">
+        <div class="suggest">建议意见，请加QQ群：651285147</div>
+    </div>
+    <div class="supported-sites">快捷入口：
+         <ul class="icons-ahref">
+             <li><a target="_blank" href="http://film.sohu.com/"><img src="img/sohu.png" /></a></li>
+             <li><a target="_blank" href="http://vip.iqiyi.com/"><img src="img/iqiyi.png" /></a></li>
+             <li><a target="_blank" href="http://film.qq.com/"><img src="img/qq.png" /></a></li>
+             <li><a target="_blank" href="http://vip.youku.com/"><img src="img/youku.png" /></a></li>
+             <li><a target="_blank" href="http://new.tudou.com/category"><img src="img/tudou.png" /></a></li>
+             <li><a target="_blank" href="http://yuanxian.le.com/"><img src="img/leshi.png" /></a></li>
+             <li><a target="_blank" href="http://vip.pptv.com/"><img src="img/pptv.png" /></a></li>
+             <li><a target="_blank" href="http://www.mgtv.com/vip/"><img src="img/mangguo.png" /></a></li>
+         </ul>
+  </div>
+</div>
+<div class="tab tab2" style="display: none;">
+    <div class="hd">
+        <span class="btn-config">功能设置</span>
+        <span class="btn-history active ">观影历史</span>
+        <span class="logo32"></span>
+        <span class="btn-delete">清除记录</span>
+    </div>
+    <ul class="history-list">
+        <li class="thead">
+            <ul>
+                <li style='padding: 0 4%;width: 32%;'>影片名称</li>
+                <li style="width: 20%;">观看日期</li>
+                <li>立即观影</li>
+            </ul>
+        </li>
+        <li class="tbody">
+            <ul>
+                <li style="width:100%">暂时没有播放记录哦</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="jquery.js"></script>
+<script src="popup.js"></script>
+</html>

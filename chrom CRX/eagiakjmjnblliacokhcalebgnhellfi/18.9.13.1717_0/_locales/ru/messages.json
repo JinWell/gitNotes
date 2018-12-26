@@ -1,0 +1,230 @@
+{
+   "AdvancedOptions": {
+      "message": "Расширенные опции"
+   },
+   "Allow_clearing_of_fixed_tabs": {
+      "message": "Разрешить очистку фиксированных вкладок"
+   },
+   "Automatic_clean": {
+      "message": "Автоматическая чистка"
+   },
+   "CleanMaster": {
+      "message": "Clean Master"
+   },
+   "CleanUpCompleted": {
+      "message": "Очистка завершена"
+   },
+   "Closeothertabsbeforecleaning": {
+      "message": "Закройте другие вкладки перед очисткой"
+   },
+   "Customize": {
+      "message": "Настроить"
+   },
+   "FeedbackandSuggestion": {
+      "message": "Обратная связь и предложение"
+   },
+   "IndexedDB": {
+      "message": "Данные IndexedDB"
+   },
+   "IndexedDB_info": {
+      "message": "Удаляет данные на сайте IndexedDB"
+   },
+   "Recommendation": {
+      "message": "Рекомендация"
+   },
+   "SelectAll": {
+      "message": "Выбрать все"
+   },
+   "SelectNone": {
+      "message": "Выберите Нет"
+   },
+   "Tabblad": {
+      "message": "табуляция"
+   },
+   "aboutCleanMaster": {
+      "message": "О чистом хозяине"
+   },
+   "aboutUs": {
+      "message": "О нас"
+   },
+   "appcache": {
+      "message": "Кэш приложения"
+   },
+   "appcache_info": {
+      "message": "Удаляет данные веб-сайта"
+   },
+   "appdsc": {
+      "message": "Один клик очищает кеш браузера и мусор, защищает вашу конфиденциальность и делает ваш браузер более быстрым и продуктивным"
+   },
+   "apptitle": {
+      "message": "Clean Master: лучший очиститель кеш-памяти"
+   },
+   "asyc_error": {
+      "message": "Некоторые автоматически очищенные данные будут восстановлены с помощью механизма автоматической синхронизации учетной записи Google."
+   },
+   "auto_sycn": {
+      "message": "Если включена автоматическая синхронизация Google, данные будут синхронизированы Google после автоматической очистки."
+   },
+   "cache": {
+      "message": "Кэшированные изображения и файлы"
+   },
+   "cache_info": {
+      "message": "Очищает кеш браузера"
+   },
+   "cancel": {
+      "message": "Отмена"
+   },
+   "clean": {
+      "message": "Очистить"
+   },
+   "cleani": {
+      "message": "чистый"
+   },
+   "cleaningup": {
+      "message": "Убираться"
+   },
+   "click_auto_clean": {
+      "message": "Нажмите значок, чтобы автоматически очистить"
+   },
+   "click_icon_clean": {
+      "message": "Выполнять очистку при нажатии значка"
+   },
+   "close_browser_clean": {
+      "message": "Закрыть браузер автоматически очистить"
+   },
+   "confirm": {
+      "message": "подтвердить"
+   },
+   "contact": {
+      "message": "Контакт"
+   },
+   "cookies": {
+      "message": "печенье"
+   },
+   "cookies_info": {
+      "message": "Удаляет cookie браузера, измененные в течение определенного периода времени"
+   },
+   "cookies_prompt": {
+      "message": "В этом поле будут удалены файлы cookie, сохраненные в браузере. Проверьте, проверено ли оно."
+   },
+   "datatoremove": {
+      "message": "Данные для удаления"
+   },
+   "donate": {
+      "message": "Пожертвовать"
+   },
+   "downloads": {
+      "message": "История загрузки"
+   },
+   "downloads_info": {
+      "message": "Удаляет список загруженных файлов браузера (а не сами загруженные файлы)"
+   },
+   "everything": {
+      "message": "Все"
+   },
+   "fileSystems": {
+      "message": "Файловые системы сайта"
+   },
+   "fileSystems_info": {
+      "message": "Удаляет данные файловой системы веб-сайта"
+   },
+   "formData": {
+      "message": "Данные формы автозаполнения"
+   },
+   "formData_info": {
+      "message": "Очищает данные хранимой формы браузера"
+   },
+   "formData_prompt": {
+      "message": "При этом в этом поле будут удалены данные формы, сохраненные браузером. Проверьте, проверено ли оно."
+   },
+   "go_to_settings": {
+      "message": "Перейдите в настройки"
+   },
+   "history": {
+      "message": "История браузера"
+   },
+   "history_info": {
+      "message": "Удаляет историю браузера"
+   },
+   "lastday": {
+      "message": "Последний день"
+   },
+   "lasthour": {
+      "message": "Последний час"
+   },
+   "lastmonth": {
+      "message": "Прошлый месяц"
+   },
+   "lastweek": {
+      "message": "На прошлой неделе"
+   },
+   "localStorage": {
+      "message": "Данные локального хранилища"
+   },
+   "localStorage_info": {
+      "message": "Очищает данные локального хранилища веб-сайта"
+   },
+   "open_browser_clean": {
+      "message": "Откройте браузер, чтобы автоматически очистить"
+   },
+   "option": {
+      "message": "вариант"
+   },
+   "passwords": {
+      "message": "Сохраненные пароли"
+   },
+   "passwords_info": {
+      "message": "Удаляет сохраненные пароли браузера"
+   },
+   "passwords_prompt": {
+      "message": "Установите этот флажок, чтобы очистить учетную запись и пароль для сохранения имени входа в браузере. Проверьте, проверено ли оно."
+   },
+   "pluginData": {
+      "message": "Данные плагина"
+   },
+   "pluginData_info": {
+      "message": "Удаляет данные хранилища плагинов браузера"
+   },
+   "praise": {
+      "message": "Пятизвездочная похвала"
+   },
+   "privacyPolicy": {
+      "message": "Конфиденциальность"
+   },
+   "prompt": {
+      "message": "Незамедлительный"
+   },
+   "rating_button_tate": {
+      "message": "Рейтинг"
+   },
+   "say": {
+      "message": "Мне есть что сказать"
+   },
+   "share": {
+      "message": "Поделиться"
+   },
+   "shareFriends": {
+      "message": "Поделитесь с нами своими друзьями!"
+   },
+   "supportUs": {
+      "message": "Ваша поддержка - большое поощрение для нас"
+   },
+   "termsOfUse": {
+      "message": "Условия эксплуатации"
+   },
+   "timePeriod": {
+      "message": "Временной период"
+   },
+   "unselect_all": {
+      "message": "снять все"
+   },
+   "usproductokey": {
+      "message": "Наши продукты в порядке с ним?"
+   },
+   "webSQL": {
+      "message": "Данные веб-SQL"
+   },
+   "webSQL_info": {
+      "message": "Удаляет данные веб-сайта WebSQL"
+   }
+}

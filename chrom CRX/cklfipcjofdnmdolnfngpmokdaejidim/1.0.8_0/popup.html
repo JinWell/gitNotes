@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>不背单词查词</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/zepto.min.js"></script>
+    <script src="/popup.js"></script>
+</head>
+
+<body>
+    <p id="header"><span id="logo"><img src="/icon_48.png" width="19" height="19"/><a href="https://langeasy.com.cn/newword.action">不背单词</a></span><span id="status"></span></p>
+    <hr />
+    <div id="search_area"><input autofocus="autofocus" id="input" type="text" name="query" /><button id="search">查询</button><span id="jump"></span></div>
+    <div id="tips"></div>
+    <div id="definition" style="display:none;">
+        <span id="word"></span>
+        <table>
+            <tr>
+                <td width="40">英音：</td>
+                <td><span id="uk_pron"></span><img src="/audio.png" style="display:none;" type="UK" id="uk_audio"></td>
+            </tr>
+            <tr>
+                <td>美音：</td>
+                <td><span id="us_pron"></span><img src="/audio.png" style="display:none;" type="US" id="us_audio"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>词义：</td>
+                <td>
+                    <div id="interpret"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <div id="footer">
+        <span id="about">
+	<p>
+		<a href="options.html">选项</a>
+		<!-- <label for="isGetWord"><input type="checkbox"  name="" id="isGetWord"/>划词翻译</label> -->
+		<span>-</span>
+        <a href="https://langeasy.com.cn" target="_newtab">关于</a></p>
+        </span>
+    </div>
+</body>
+
+</html>

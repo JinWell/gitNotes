@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "download.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "icons/19.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_ext_name__"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "icons/128.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtkPs7qsky/crGYASZs4WZ1cWiWdYEfLa/x3HbUFSLuB6mP7cBjMZ0QMVg4kvS3NCxmO2TPqnAHCEaP4zTK6xDhaTEtcKHH0EzMGBtZB6Rev6br9UQU6eKO8QUs73qDdWtsRlJjc5aYoEdRu74SQy8sHwhxXIvFnyB5k+4/EWoLGDLdxGXMKr4lDI6QQXcX7GJoWpx8VaElHjzjyw1n0cbugYwK5HvUv5anBB2AJVkT2FzivlcM3eaQppEK53X6RRuyrkMiQpOjfYodI44vMk2sbbKUQTF7QDhp4aiRH0fiy/QQ9iMPWahjDs9tNnVGLE7KZ+KlO4Fa0CyhML+3L9hwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ext_name__",
+   "permissions": [ "downloads", "tabs", "storage", "webRequest", "http://*/*", "https://*/*" ],
+   "short_name": "free-music-download",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.1"
+}

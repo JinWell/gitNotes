@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "zh_CN",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "images/install_logo.png",
+      "16": "images/menu_logo.png",
+      "32": "images/logo32.png",
+      "48": "images/extension_logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAomuTi53axtIy3aYPbwEKAQh20dEzSp5wGyO7jGDs2MME/8pHAT4+fhuL6k0BXmGABpAORnxxf32ydbmUeyAOzhRUC9JeJFBRxBPVvU13vuWgVKkWKznLmb8dEUnwf/MpZN8DlrLmI9iwzGVT8BGMSU8vBPnOgi+z27h2eKNwgv/JVR0eV8HLVExk6VTXnoOcYrYL68g/3u4j63dYrlkykVcszVwUgK+RTWCtmTjm9O6bW5PYlJQuEdnSfkSIRcWfAvv78TJX/92vyg5+Id52bVhcDPQjLkg0UyW4W4gHgnMdx5uhVZPvcImB/chJ1VNadvhrjxrgCGkxmPGriA8LHwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "nativeMessaging", "cookies", "contextMenus", "tabs", "downloads", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.15"
+}

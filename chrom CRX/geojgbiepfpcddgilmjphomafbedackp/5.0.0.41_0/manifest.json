@@ -1,0 +1,58 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "logos/19g.png",
+         "38": "logos/38g.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "VIP看电影"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "ifr.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "iconfont.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "DPlayer.min.css", "main.css" ],
+      "js": [ "DPlayer.min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "qq.css" ],
+      "matches": [ "*://v.qq.com/*.html*" ],
+      "run_at": "document_idle"
+   }, {
+      "css": [ "youku.css" ],
+      "matches": [ "*://*.youku.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "css": [ "tudou.css" ],
+      "matches": [ "*://*.tudou.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "pptv.css" ],
+      "matches": [ "*://*.pptv.com/*.html*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self'  'unsafe-eval'; object-src 'self'",
+   "description": "《VIP看电影》是一款可以让您看VIP电影及电视剧的扩展软件。安装后即可流畅观看各大视频网站的VIP影视剧，目前VIP看电影已支持各大主流视频网站。",
+   "icons": {
+      "128": "logos/128.png",
+      "16": "logos/16g.png",
+      "48": "logos/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8yzP8VphFXvau8dXQHZM91C9l2JvXEaq+DqFE+fykN9Hg+e2RH6eUgcmWi4ywr3Ds6EGo4FXBBrRugG9hr4u6DF9CxLdisnQYd3KOmmeeI4969tNruFyCsHwp5jfmtyIcL00yVMoV/kgFOssFFUDCkQE8KWHFcGXtwpwB4b1soNT3+wUN7au1RRCGhNAaK7aZBstsWRpf9y1S7AkB+JWxzpmOiOD70YZprJTcgzONvYd/EjqPbSvwiJZRDGZPqqjDu8NEanKEkzx/lheNEfOLqvtYmGiHwatXVGK9LHXX69iEfmhs4M7lpJ84pFRMOTHqwNmA3oe03g4o8gm3vCFgQIDAQAB",
+   "manifest_version": 2,
+   "name": "VIP看电影",
+   "permissions": [ "*://*/*", "storage", "cookies", "unlimitedStorage", "webRequest", "webRequestBlocking", "tabs", "nativeMessaging", "proxy", "management", "contextMenus", "webNavigation", "browsingData" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.0.0.41",
+   "web_accessible_resources": [ "logos/*", "images/*", "page.js", "*-page.js", "ckplayer.js" ]
+}

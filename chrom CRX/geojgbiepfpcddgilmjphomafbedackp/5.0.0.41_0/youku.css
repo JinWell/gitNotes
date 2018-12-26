@@ -1,0 +1,9 @@
+.w1300 .playArea .ckplayer-embed{
+    height: 579px;
+}
+.playArea .ckplayer-embed{
+    height: 457px;
+}
+body.vip-parsed #player object{
+    display: none;
+}

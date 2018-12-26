@@ -1,0 +1,49 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "statics/imgs/icon-19.png",
+         "38": "statics/imgs/icon-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extensionShortName__"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "styles/video.css" ],
+      "js": [ "video.js", "vendors.bundle.js" ],
+      "matches": [ "*://*.bilibili.com/bangumi/play/ss*", "*://*.bilibili.com/bangumi/play/ep*", "*://*.bilibili.com/video/av*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": false,
+      "js": [ "vendors.bundle.js", "live.js", "libs/ocrad.min.js" ],
+      "matches": [ "*://live.bilibili.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com/analytics.js https://www.google-analytics.com/analytics_debug.js; object-src 'self';",
+   "default_locale": "zh_CN",
+   "description": "__MSG_extensionDescription__",
+   "icons": {
+      "128": "statics/imgs/icon-128.png",
+      "16": "statics/imgs/icon-16.png",
+      "32": "statics/imgs/icon-32.png"
+   },
+   "incognito": "split",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDd/wqh8sN1lnVWVGyKqhGM0Zz0ZuY3Dq5hNK3qNBw1/+B/XGe+zzwe7aSyr0qikd8pkN5HpoDvEDdkFHcdhPwXWoQGKiNAnKtohuz/2+g5YzLYzQg2bRqKdYJebEoCoiHtoSNS/HRtUeg483ypAH26LLyD6p+ykwQNo9DvtBo0kwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "56.0.0",
+   "name": "__MSG_extensionName__",
+   "options_page": "config.html",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "config.html"
+   },
+   "permissions": [ "downloads", "alarms", "contextMenus", "cookies", "notifications", "storage", "tabs", "webRequest", "webRequestBlocking", "http://*/", "https://*/" ],
+   "short_name": "__MSG_extensionShortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.8",
+   "web_accessible_resources": [ "statics/*", "bilibili-helper.woff", "at.alicdn.com/t/*", "libs/*", "js/*" ]
+}

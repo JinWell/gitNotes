@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <rect id="a" width="370" height="360" rx="2"/>
+        <filter id="b" width="109.7%" height="110%" x="-4.9%" y="-3.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter2"/>
+            <feOffset in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+            <feColorMatrix in="shadowOffsetOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <path id="e" d="M0 0h370v54H0z"/>
+        <filter id="d" width="100.3%" height="103.7%" x="-.1%" y="-.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-340 -19)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <use fill="#FFF" xlink:href="#a"/>
+        <g mask="url(#c)">
+            <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+            <use fill="#FFF" xlink:href="#e"/>
+            <g fill-rule="nonzero">
+                <path fill="#999" d="M355.47 25.114l-1.238.721c.07.379.115.766.115 1.165 0 .4-.045.786-.115 1.165l1.239.72c.506.295.68.948.387 1.458L354.8 32.19c-.292.51-.939.685-1.445.39l-1.251-.728a6.327 6.327 0 0 1-1.988 1.176v.905c0 .59-.474 1.067-1.058 1.067h-2.116a1.062 1.062 0 0 1-1.058-1.067v-.905a6.328 6.328 0 0 1-1.988-1.176l-1.251.729a1.053 1.053 0 0 1-1.445-.39l-1.058-1.848a1.072 1.072 0 0 1 .387-1.457l1.239-.721a6.432 6.432 0 0 1-.115-1.165c0-.4.045-.786.115-1.165l-1.239-.72a1.072 1.072 0 0 1-.387-1.458l1.058-1.847c.292-.51.939-.685 1.445-.39l1.251.728a6.327 6.327 0 0 1 1.988-1.176v-.905c0-.59.474-1.067 1.058-1.067h2.116c.584 0 1.058.478 1.058 1.067v.905a6.327 6.327 0 0 1 1.988 1.176l1.251-.729a1.053 1.053 0 0 1 1.445.39l1.058 1.848c.292.51.119 1.163-.387 1.457zm-.793-1.385l-.529-.924a.527.527 0 0 0-.722-.195l-1.47.855a5.27 5.27 0 0 0-2.898-1.691V20.6a.531.531 0 0 0-.529-.533h-1.058a.531.531 0 0 0-.529.533v1.174a5.27 5.27 0 0 0-2.898 1.691l-1.47-.855a.527.527 0 0 0-.722.195l-.53.924a.536.536 0 0 0 .194.728l1.476.86A5.337 5.337 0 0 0 342.71 27c0 .59.105 1.153.28 1.684l-1.475.859a.536.536 0 0 0-.193.729l.529.923c.146.255.47.343.722.195l1.47-.855a5.27 5.27 0 0 0 2.898 1.691V33.4c0 .295.237.533.529.533h1.058a.531.531 0 0 0 .529-.533v-1.174a5.27 5.27 0 0 0 2.898-1.691l1.47.855c.253.148.576.06.722-.195l.53-.923a.536.536 0 0 0-.194-.729l-1.476-.859c.176-.53.281-1.094.281-1.684 0-.59-.105-1.153-.28-1.684l1.475-.859a.536.536 0 0 0 .193-.728zM348 29.667A2.656 2.656 0 0 1 345.355 27c0-1.473 1.184-2.667 2.645-2.667 1.46 0 2.645 1.194 2.645 2.667 0 1.473-1.184 2.667-2.645 2.667zm0-4.267c-.876 0-1.587.716-1.587 1.6 0 .884.71 1.6 1.587 1.6.876 0 1.587-.716 1.587-1.6 0-.884-.71-1.6-1.587-1.6z" opacity=".99"/>
+            </g>
+        </g>
+    </g>
+</svg>

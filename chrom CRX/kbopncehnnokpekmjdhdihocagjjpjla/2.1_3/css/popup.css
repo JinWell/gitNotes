@@ -1,0 +1,43 @@
+
+body {
+
+    width: 480px;
+    height: 450px;
+}
+
+button, .btn{
+    cursor: pointer;
+}
+
+.main-top {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.main-top img {
+    display: block;
+    margin: 20px auto;
+}
+
+.main-top-title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.main-bottom {
+    height: auto;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.main-bottom-text {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.thank {
+    display: block;
+    margin-top: 20px;
+}

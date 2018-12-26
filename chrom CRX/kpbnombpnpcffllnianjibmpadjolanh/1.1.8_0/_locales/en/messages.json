@@ -1,0 +1,138 @@
+{
+   "adModeOff": {
+      "description": "Popup Button: ad_mode_off",
+      "message": "Enter AD Mode"
+   },
+   "adModeOn": {
+      "description": "Popup Button: ad_mode_on",
+      "message": "Leave AD Mode"
+   },
+   "checkVersionGetUpdateError": {
+      "description": "Notification: Extension Update Error",
+      "message": "get update information failed"
+   },
+   "checkVersionNewVersion": {
+      "description": "Notification: new version detected",
+      "message": "New version detected:"
+   },
+   "checkVersionNoNewVersion": {
+      "description": "Notification: no new version detected",
+      "message": "This is newest version"
+   },
+   "extensionDescription": {
+      "description": "Extension: Description",
+      "message": "An extension for Bilibili that provides convenient features/shortcuts."
+   },
+   "extensionName": {
+      "description": "Extension: Name",
+      "message": "Bilibili Helper: Bilibili.com Auxiliary"
+   },
+   "extensionNotificationExtensionUpdate": {
+      "description": "Notification: Extension Update",
+      "message": "Bilibili Helper just auto updated to v%v!"
+   },
+   "extensionNotificationGetTv": {
+      "description": "Notification: Get TV",
+      "message": "Attend it."
+   },
+   "extensionNotificationLiveOn": {
+      "description": "Notification: Live On",
+      "message": " is live-streaming!"
+   },
+   "extensionNotificationNewFeatures": {
+      "description": "Notification: New Features",
+      "message": "What's New"
+   },
+   "extensionNotificationShowAll": {
+      "description": "Notification: Show All",
+      "message": "Show All"
+   },
+   "extensionNotificationTitle": {
+      "description": "Notification: Title",
+      "message": "Bilibili Helper Notification"
+   },
+   "extensionNotificationWatch": {
+      "description": "Notification: Watch",
+      "message": "Watch"
+   },
+   "extensionNotificationWatchLater": {
+      "description": "Notification: Watch Later",
+      "message": "Watch Later"
+   },
+   "extensionShortName": {
+      "description": "Extension: Short Name",
+      "message": "Bilibili Helper"
+   },
+   "followingUpdateMessage": {
+      "description": "Notification: Following Update Message",
+      "message": "Your bilibili followings updated (%n new)!\n%uploader just published '%title'!"
+   },
+   "goBili": {
+      "description": "Popup Button: go_bili",
+      "message": "Go to bilibili.com"
+   },
+   "goBiliLive": {
+      "description": "Popup Button: go_bili_live",
+      "message": "Go to Bilibili Live"
+   },
+   "goDynamic": {
+      "description": "Popup Button: go_dynamic",
+      "message": "Followings"
+   },
+   "goFavourite": {
+      "description": "Popup Button: go_favourite",
+      "message": "Favourites"
+   },
+   "goOption": {
+      "description": "Popup Button: go_option",
+      "message": "Options"
+   },
+   "goSubscription": {
+      "description": "Popup Button: go_subscription",
+      "message": "Subscriptions"
+   },
+   "goVideo": {
+      "description": "Popup Button: go_video",
+      "message": "GO!"
+   },
+   "nNewUpdate": {
+      "description": "Popup Button: new_update",
+      "message": " (%n New)"
+   },
+   "notLogged": {
+      "description": "Popup Button: not_logged",
+      "message": " (Please Login)"
+   },
+   "notLogin": {
+      "description": "Popup Button: not login",
+      "message": "not login"
+   },
+   "optionPage": {
+      "description": "Option Page: Title",
+      "message": "Options"
+   },
+   "permissionManager_login_description": {
+      "description": "You need to log in to your bilibili's account.",
+      "message": "You need to log in to your bilibili's account."
+   },
+   "permissionManager_login_error_massage": {
+      "description": "not login",
+      "message": "not login"
+   },
+   "permissionManager_notifications_description": {
+      "description": "You should agree with the permission for notify to turn on related features.",
+      "message": "You should agree with the permission for notify to turn on related features"
+   },
+   "permissionManager_notifications_error_massage": {
+      "description": "no notification permission",
+      "message": "no notification permission"
+   },
+   "pictureInPictureTitle": {
+      "description": "picture in picture",
+      "message": "Pip"
+   },
+   "searchBili": {
+      "description": "Context Menu: Title",
+      "message": "Search Bilibili for '%s'"
+   }
+}

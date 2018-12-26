@@ -1,0 +1,42 @@
+{
+   "GLOBAL_APP_DESCRIPTION": {
+      "description": "Extension description.",
+      "message": "Implantar líneas auxiliares en la página web (por ejemplo para controllar puntos de alineamiento)"
+   },
+   "GLOBAL_APP_NAME": {
+      "description": "Extension name.",
+      "message": "PageLiner"
+   },
+   "POPUP_ALL_HELPLINES_HEADING": {
+      "description": "Popup table head.",
+      "message": "Todas líneas auxiliares"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+      "description": "Popup table colors.",
+      "message": "Color"
+   },
+   "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+      "description": "Popup table positions.",
+      "message": "Posición"
+   },
+   "POPUP_CLEAR_ALL_HELPLINES": {
+      "description": "Popup action.",
+      "message": "borrar todas líneas auxiliares"
+   },
+   "POPUP_DONATE": {
+      "description": "Donate link.",
+      "message": "Comprarme una cerveza"
+   },
+   "POPUP_NEW_HELPLINE_X": {
+      "description": "Popup action.",
+      "message": "vertical"
+   },
+   "POPUP_NEW_HELPLINE_Y": {
+      "description": "Popup action.",
+      "message": "horizontal"
+   },
+   "POPUP_TOGGLE_HELPLINES": {
+      "description": "Popup action.",
+      "message": "mostrar/ocultar las líneas auxiliares"
+   }
+}

@@ -1,0 +1,17 @@
+{
+   "download": {
+      "message": "Download"
+   },
+   "ext_description": {
+      "message": "Spletni prenosnik glasbe iz Zvooq, Facebook, Vimeo, Tidal, SoundCloud in še mnoge druge strani"
+   },
+   "ext_name": {
+      "message": "Brezplačna prenos glasbe"
+   },
+   "files": {
+      "message": "Music files on this page"
+   },
+   "not_founded": {
+      "message": "Please try to \u003Cspan>start a playback\u003C/span>\u003C/br>\u003Cspan class=\"small\">This will help us to find your file\u003C/span>\u003Cspan class=\"thank\">Thank you for understanding!\u003C/span>"
+   }
+}

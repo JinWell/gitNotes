@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="copyright" content="huaban.com"/>
+    <link rel="stylesheet" href="/css/popup.css">
+    <script src="/js/popup.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div id="ext_name">花瓣网页收藏工具</div>
+      <a id="preferences" class="button" href="/preferences.html" target="_blank" rel="noopener noreferrer" title="选项"></a>
+    </header>
+
+    <div class="box">
+      <div id="pin-all-btn" class="btn bounce button disabled">
+        <span class="title">采集图片/视频</span>
+      </div>
+
+      <div style="width: 100%; height: 50px; line-height: 50px; text-align: center;">
+        <span style="color: #999; font-size: 18px;">截图功能</span>
+      </div>
+
+      <div class="btn-group">
+        <div id="capture-area-item" class="btn btn-group-item button capture disabled">
+          <span class="title">选择区域</span>
+        </div>
+        <div id="capture-viewport-item" class="btn btn-group-item button capture disabled">
+          <span class="title">可视区域</span>
+        </div>
+        <div id="capture-fullpage-item" class="btn btn-group-item button capture disabled" style="width: 108px; border-right: none;">
+          <span class="title">整张网页</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="popup">
+      <div id="toggle-btn" class="button">
+        <span class="title">显示采集按钮</span>
+      </div>
+      <div id="visit">
+        <a id="huaban-link" href="http://huaban.com/?md=chrome_ex">访问花瓣&nbsp;>></a>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/ajax.js"></script>
+  </body>
+</html>

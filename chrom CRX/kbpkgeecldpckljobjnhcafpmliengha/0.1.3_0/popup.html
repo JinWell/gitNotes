@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>DUOC REMIND's Popup</title>
+    <link rel="stylesheet" type="text/css" href="static/style/base.css"/>
+    <link rel="stylesheet" type="text/css" href="static/style/do-task.css"/>
+    <link rel="stylesheet" type="text/css" href="static/style/stuff_block.css"/>
+    <link rel="stylesheet" type="text/css" href="static/style/showbox.css"/>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+  </head>
+  <body>
+	<div id="do-task">
+		<div id="task-container">
+			<div class="layer left">
+				<div class="loading">
+					<img src="/static/img/loading.gif" alt="读取中···">
+				</div>
+			</div>
+			<div class="layer right">
+				<div class="loading">
+					<img src="/static/img/loading.gif" alt="读取中···">
+				</div>
+			</div>
+			<div class="layer main">
+			</div>
+		</div>
+	</div>
+     <div id='popFrame_bg' class='png'></div>
+     <div id='popFrame'>
+         <div id='popFrame_close' class="png"></div>
+     </div>
+	 <div id="alert" class="png">警告框</div>
+      <div id="hidden">            
+	    <textarea id="style-list">
+	    	<div class="style-list" data-id="$id$">
+	    		<a class="name" href="$url$">$name$</a>
+	    		<div class="del"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="loading-layer">
+	    	<div class="layer $direction$" style="height:$height$px;line-height:$height$px">
+	    		<div class="loading">
+	    			<img src="/static/img/loading.gif" alt="读取中···">
+	    		</div>
+	    	</div>
+	    </textarea>	
+	    <textarea id="task-loading">
+	    	<div class="task task-loading">
+	    		<div class="task-body">
+	    			<div class="task-title">
+	    				<img src="/static/img/loading.gif" alt="读取中···">
+	    			</div>
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-blank">
+	    	<div class="task task-blank">
+	    		<div class="task-body">
+	    			<div class="task-title">
+	    				当前时段没有任务
+	    			</div>
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-add">
+	    	<div class="task task-add">
+	    		<div class="task-body">
+	    			<div class="text-define">写提醒...</div>
+	    			<!-- <div class="add-sure png" title="添加提醒"></div> -->
+	    			<div class="edit-sure png" title="编辑提醒"></div>
+	    			<input type="text" id="task-input" maxlength="140">
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-preview">
+	    	<div class="task task-preview">
+	    		<div class="task-body">
+	    			<div id="go-summary">
+	    				详细
+	    				<span class="png"></span>
+	    			</div>
+	    			<div class="task-title">
+	    				$preview_time$$item_name$$add$
+	    			</div>
+	    		</div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-habit">
+	    	<div class="task task-habit" data-itemid='$item_id$' data-type='$type$' data-styleid='$style_id$' data-timestamp='$timestamp$'>
+	    		<div class="task-header">
+	    			<span class='png'></span>
+	    		</div>
+	    		<div class="task-body">
+	    			<div class="fold-button">&#9660;</div>
+	    			<div class="task-title">
+	    				$text$
+	    			</div>
+	    			<div class="contral fold">
+	    				<div class="stuffs">$stuffs_html$</div>
+	    				<div class="footer">
+	    					<div class="del png" title='不做这个任务'></div>
+	    					<div class="hr"></div>
+	    					<a href='$head_url$' class="more png" title='详细信息' target="_blank"></a>
+	    					<div class="parent">
+	    						<span class="time-str">$time$</span>
+	    						<span class="parent_style">$style_name$</span>
+                                <div class="popup">
+                                    <div class="popup_continer">
+                                        <div class="arrow">&#9670;</div>
+	    						        <a href='$style_url$' class='li style_detail' target="_blank">生活方式</a>
+	    						        <div class='li del_style'>取消跟随</div>
+                                    </div>
+                                </div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-paper">
+	    	<div class="task task-paper" data-itemid='$item_id$' data-type='$type$' data-styleid='$style_id$' data-timestamp='$timestamp$' data-msgid="$msg_id$">
+	    		<div class="task-header">
+	    			<span class='png'></span>
+	    		</div>
+	    		<div class="task-body" data-img="<img src='$text_img_big$' width='500px'>">
+	    			<div class="fold-button">&#9660;</div>
+	    			<div class="task-title">
+	    				《$title$》
+	    				<span class="task-text">
+	    					$text_img_small$
+	    					$text$
+	    				</span>
+	    			</div>
+	    			<div class="contral fold">
+	    				<div class="stuffs">$stuffs_html$</div>
+	    				<div class="footer">
+	    					<div class="del png" title='不做这个任务'></div>
+	    					<div class="hr"></div>
+	    					<a href='$title_url$' class="more png" title='详细信息' target="_blank"></a>
+	    					<div class="hr"></div>
+	    					<div class="vote message_vote">
+	    						可信分：<span class="credit">$credit$</span>
+	    						<span class="png good $good$"></span>
+	    						<span class="png bad $bad$"></span>
+	    					</div>
+	    					<div class="hr"></div>
+	    					<a href="$text_url$" class="comments" target="_blank">评论</a>
+	    					<div class="parent">
+	    						<span class="time-str">$time$</span>
+	    						<span class="parent_style">$style_name$</span>
+                                <div class="popup">
+                                    <div class="popup_continer">
+                                        <div class="arrow">&#9670;</div>
+	    							    <a href='$style_url$' class='li style_detail' target="_blank">生活方式</a>
+	    							    <div class='li del_style'>取消跟随</div>
+                                    </div>
+                                </div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+	    </textarea>
+	    <textarea id="task-friend">
+	    	<div class="task task-friend" data-itemid='$item_id$' data-type='$type$' data-styleid='$style_id$' data-timestamp='$timestamp$' data-msgid="$msg_id$">
+	    		<div class="task-header">
+	    			<span class='png'></span>
+	    		</div>
+	    		<div class="task-body" data-img="<img src='$text_img_big$' width='500px'>">
+	    			<div class="fold-button">&#9660;</div>
+	    			<div class="task-title">
+	    				$name$
+	    				<span class="task-text">
+	    					$text_img_small$
+	    					：$text$
+	    				</span>
+	    			</div>
+	    			<div class="contral fold">
+	    				<div class="stuffs">$stuffs_html$</div>
+	    				<div class="footer">
+	    					<div class="del png" title='不做这个任务'></div>
+	    					<div class="hr"></div>
+	    					<a href='$text_url$' class="more png" title='详细信息' target="_blank"></a>
+	    					<div class="hr"></div>
+	    					<div class="vote message_vote">
+	    						可信分：<span class="credit">$credit$</span>
+	    						<span class="png good $good$"></span>
+	    						<span class="png bad $bad$"></span>
+	    					</div>
+	    					<div class="hr"></div>
+	    					<a href="$text_url$" class="comments" target="_blank">评论</a>
+	    					<div class="parent">
+	    						<span class="time-str">$time$</span>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="footer"></div>
+	    	</div>
+        </textarea>
+        <textarea id="stuff_block_string">
+            <div class="people_info_stuff_block">
+                <div class='arrow_block'>
+                    <div class="arrow_block_container">
+                        <span class="arrow">&#9670;</span>
+                        <span class="name">$name$</span>
+                        <span class="duoc_square_pop_goal_stars png" style="width:$star$px"></span>
+                    </div>            
+                </div>
+                <div class="people_info_stuff_footer png"></div>
+                <div class="people_info_stuff_img" style="background-image: url($img$);">
+                    <a href="$url$" class="png" target="_blank"></a>
+                </div>
+            </div>
+        </textarea>
+    <div id="ensure">
+        <div class="ensure_title"></div>
+        <div class="ensure_button"></div>
+    </div>
+    <div id="confirm">
+        <p></p>
+        <div class="button"></div>
+        <div class="big_button"></div>
+    </div>
+      </div>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/plus.js"></script>
+    <script type="text/javascript" src="js/duoc_people.js"></script>
+    <script type="text/javascript" src="js/check_status.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/duoc_stuff_block.js"></script>
+  </body>
+</html>

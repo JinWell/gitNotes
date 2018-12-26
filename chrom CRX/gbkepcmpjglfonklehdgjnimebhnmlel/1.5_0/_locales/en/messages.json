@@ -1,0 +1,74 @@
+{
+   "errorIdNotForm": {
+      "description": "Error message thrown when the given `id` isn't a form element.",
+      "message": "Element with ID `$1` isn't a form element."
+   },
+   "errorIdNotFound": {
+      "description": "Error message thrown when the given `id` doesn't exist",
+      "message": "Element with ID `$1` doesn't exist in the document"
+   },
+   "errorNoExtensionAccess": {
+      "description": "Error message displayed when `levelOfControl` is 'not_controllable'.",
+      "message": "This browser's proxy settings cannot be controlled via extensions."
+   },
+   "errorNotAllowedForIncognito": {
+      "description": "Error message, displayed when normal mode succeeded and incognito mode failed.",
+      "message": "Proxy settings succeeded, it is recommended to enable this extension in incognito mode."
+   },
+   "errorOtherExtensionControls": {
+      "description": "Error message displayed when `levelOfControl` is 'controlled_by_other_extensions'.",
+      "message": "This browser's proxy settings are being controlled by another extension. Please visit chrome://extensions for details."
+   },
+   "errorPopupTitle": {
+      "description": "Error message used as popup title.",
+      "message": "Error: $1"
+   },
+   "errorProxyDetailedError": {
+      "description": "Error message displayed in popup when an error occurs.",
+      "message": "ProxyError: $1. $2."
+   },
+   "errorProxyError": {
+      "description": "Error message displayed in popup when an error occurs.",
+      "message": "ProxyError: $1."
+   },
+   "errorSettingIncognitoProxy": {
+      "description": "Error message, displayed when failing to set incognito proxy settings.",
+      "message": "Failed to apply incognito proxy settings."
+   },
+   "errorSettingRegularProxy": {
+      "description": "Error message, displayed when failing to set regular proxy settings.",
+      "message": "Failed to apply regular proxy settings."
+   },
+   "extDescription": {
+      "description": "The extension description.",
+      "message": "Use Chrome synchronization service in China."
+   },
+   "extName": {
+      "description": "The extension name.",
+      "message": "Chrome Sync Helper"
+   },
+   "inputDefault": {
+      "description": "Placeholder text.",
+      "message": "Default"
+   },
+   "saveSettings": {
+      "description": "The message for submit button.",
+      "message": "Save proxy settings"
+   },
+   "successfullySetProxy": {
+      "description": "Success message, displayed after proxy settings have been written.",
+      "message": "Your proxy settings have been saved successfully."
+   },
+   "tipMessage": {
+      "description": "Additional tip message.",
+      "message": "Nothing"
+   },
+   "usePAC": {
+      "description": "The message for PAC proxy.",
+      "message": "Use proxy automatic configuration"
+   },
+   "useSystemSettings": {
+      "description": "The message for system default settings.",
+      "message": "Use the system's proxy settings"
+   }
+}

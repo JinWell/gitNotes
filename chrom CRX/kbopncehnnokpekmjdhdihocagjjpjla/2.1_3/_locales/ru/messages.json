@@ -1,0 +1,17 @@
+{
+   "download": {
+      "message": "Скачать"
+   },
+   "ext_description": {
+      "message": "Бесплатно скачать музыку MP3 с Zvooq, Facebook, Vimeo, Tidal, SoundCloud и многих других сайтов"
+   },
+   "ext_name": {
+      "message": "Скачать музыку бесплатно"
+   },
+   "files": {
+      "message": "На странице найдены треки:"
+   },
+   "not_founded": {
+      "message": "Пожалуйста \u003Cspan>запустите проигрывание\u003C/span>\u003C/br> \u003Cspan class=\"small\">Это поможет нам найти именно нужный Вам файл\u003C/span>\u003Cspan class=\"thank\">Спасибо за понимание!\u003C/span>"
+   }
+}

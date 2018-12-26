@@ -1,0 +1,772 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Button Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@charset "UTF-8";
+/**************** 通用设置 ******************/
+.wui-button * {  margin: 0;  padding: 0; }
+.wui-button {  display: inline-block;  *display: inline;  text-align: center;  text-decoration: none;  vertical-align: middle;
+    cursor: pointer;  font-size: 14px;  font-family: inherit;
+    /* Correct font family not being inherited in all browsers for <button> <input> */
+    font-weight: bold;  *zoom: 1;  *overflow: visible;
+    /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+    background-image: none;
+    /* for old alice button style conflict */
+    border: 1px solid transparent; }
+.wui-button .wui-button-text {  background: none;  padding: 0;  height: auto;  line-height: auto; }
+.wui-button:hover {  text-decoration: none;  background-image: none; /* for old alice button style conflict */  outline: 0; }
+input.wui-button-text, button.wui-button-text {  *vertical-align: top; /* for a ie7 bug */ }
+.wui-button:visited, .wui-button:focus {  outline: 0; }
+.wui-button:active {  position: relative;  top: 1px;  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);  outline: 0; /*box-shadow: 1px 1px 3px #999 inset;*/ }
+/**************** 按钮的颜色 ******************/
+.wui-button-red {  color: #FFFFFF;  border: 1px solid #df4400;  background-color: #ff4e00; }
+.wui-button-red:hover {  color: #FFFFFF;  border: 1px solid #c63d00;  background-color: #e74700; }
+.wui-button-red.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-red.wui-button-label:hover {  color: #FFFFFF;  border: 1px solid #df4400;  background-color: #ff4e00; }
+.wui-button-red.disabled, .wui-button-red[disabled], fieldset[disabled] .wui-button-red,
+.wui-button-red.disabled:focus, .wui-button-red[disabled]:focus, fieldset[disabled] .wui-button-red:focus, .wui-button-red.disabled:active,
+.wui-button-red[disabled]:active, fieldset[disabled] .wui-button-red:active, .wui-button-red.disabled.active, .wui-button-red[disabled].active,
+fieldset[disabled] .wui-button-red.active {  opacity: 0.45;  filter: alpha(opacity=45); }
+.wui-button-purple {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #9C80C9; }
+.wui-button-purple:hover {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #B099D4; }
+.wui-button-purple.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-purple.wui-button-label:hover {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #9C80C9; }
+.wui-button-purple.disabled, .wui-button-purple[disabled], fieldset[disabled] .wui-button-purple, .wui-button-purple.disabled:focus, .wui-button-purple[disabled]:focus, fieldset[disabled] .wui-button-purple:focus, .wui-button-purple.disabled:active, .wui-button-purple[disabled]:active, fieldset[disabled] .wui-button-purple:active, .wui-button-purple.disabled.active, .wui-button-purple[disabled].active, fieldset[disabled] .wui-button-purple.active {
+    opacity: 0.45;  filter: alpha(opacity=45); }
+.wui-button-blue {  color: #fff;  border: 1px solid #0099cc;  background-color: #00aaee; }
+.wui-button-blue:hover {  color: #fff;  border: 1px solid #0099cc;  background-color: #00a3d2; }
+.wui-button-blue.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-blue.wui-button-label:hover {  color: #fff;  border: 1px solid #0099cc;  background-color: #00aaee; }
+.wui-button-blue.disabled, .wui-button-blue[disabled], fieldset[disabled] .wui-button-blue, .wui-button-blue.disabled:focus, .wui-button-blue[disabled]:focus, fieldset[disabled] .wui-button-blue:focus, .wui-button-blue.disabled:active, .wui-button-blue[disabled]:active, fieldset[disabled] .wui-button-blue:active, .wui-button-blue.disabled.active, .wui-button-blue[disabled].active, fieldset[disabled] .wui-button-blue.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-orange {  color: #fff;  border: 1px solid #d66500;  background-color: #f57403; }
+.wui-button-orange:hover {  color: #fff;  border: 1px solid #d66500;  background-color: #fb8318; }
+.wui-button-orange.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-orange.wui-button-label:hover {  color: #fff;  border: 1px solid #d66500;  background-color: #f57403; }
+.wui-button-orange.disabled, .wui-button-orange[disabled], fieldset[disabled] .wui-button-orange, .wui-button-orange.disabled:focus, .wui-button-orange[disabled]:focus, fieldset[disabled] .wui-button-orange:focus, .wui-button-orange.disabled:active, .wui-button-orange[disabled]:active, fieldset[disabled] .wui-button-orange:active, .wui-button-orange.disabled.active, .wui-button-orange[disabled].active, fieldset[disabled] .wui-button-orange.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-green {  color: #fff;  border: 1px solid #379000;  background-color: #4BB402; }
+.wui-button-green:hover {  color: #fff;  border: 1px solid #379000;  background-color: #66BC2A; }
+.wui-button-green.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-green.wui-button-label:hover {  color: #fff;  border: 1px solid #379000;  background-color: #4BB402; }
+.wui-button-green.disabled, .wui-button-green[disabled], fieldset[disabled] .wui-button-green, .wui-button-green.disabled:focus, .wui-button-green[disabled]:focus, fieldset[disabled] .wui-button-green:focus, .wui-button-green.disabled:active, .wui-button-green[disabled]:active, fieldset[disabled] .wui-button-green:active, .wui-button-green.disabled.active, .wui-button-green[disabled].active, fieldset[disabled] .wui-button-green.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-white {  color: #777;  border: 1px solid #cfcfcf;  background-color: #f3f3f3; }
+.wui-button-white:hover {  color: #676d70;  border: 1px solid #adadad;  background-color: #fcfbfb; }
+.wui-button-white.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-white.wui-button-label:hover {  color: #777;  border: 1px solid #cfcfcf;  background-color: #f3f3f3; }
+.wui-button-white.disabled, .wui-button-white[disabled], fieldset[disabled] .wui-button-white, .wui-button-white.disabled:focus, .wui-button-white[disabled]:focus, fieldset[disabled] .wui-button-white:focus, .wui-button-white.disabled:active, .wui-button-white[disabled]:active, fieldset[disabled] .wui-button-white:active, .wui-button-white.disabled.active, .wui-button-white[disabled].active, fieldset[disabled] .wui-button-white.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-gray {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E1E1E1; }
+.wui-button-gray:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E9E9E9; }
+.wui-button-gray.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-gray.wui-button-label:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E1E1E1; }
+.wui-button-gray.disabled, .wui-button-gray[disabled], fieldset[disabled] .wui-button-gray, .wui-button-gray.disabled:focus, .wui-button-gray[disabled]:focus, fieldset[disabled] .wui-button-gray:focus, .wui-button-gray.disabled:active, .wui-button-gray[disabled]:active, fieldset[disabled] .wui-button-gray:active, .wui-button-gray.disabled.active, .wui-button-gray[disabled].active, fieldset[disabled] .wui-button-gray.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+/**************** 没有背景的按钮颜色 ******************/
+.wui-button-blue-nobg {  color: #00aaee;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg:hover {  color: #00a3d2;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-blue-nobg.wui-button-label:hover {  color: #00aaee;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg.disabled, .wui-button-blue-nobg[disabled], fieldset[disabled] .wui-button-blue-nobg, .wui-button-blue-nobg.disabled:focus, .wui-button-blue-nobg[disabled]:focus, fieldset[disabled] .wui-button-blue-nobg:focus, .wui-button-blue-nobg.disabled:active, .wui-button-blue-nobg[disabled]:active, fieldset[disabled] .wui-button-blue-nobg:active, .wui-button-blue-nobg.disabled.active, .wui-button-blue-nobg[disabled].active, fieldset[disabled] .wui-button-blue-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-orange-nobg {  color: #f57403;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg:hover {  color: #fb8318;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-orange-nobg.wui-button-label:hover {  color: #f57403;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg.disabled, .wui-button-orange-nobg[disabled], fieldset[disabled] .wui-button-orange-nobg, .wui-button-orange-nobg.disabled:focus, .wui-button-orange-nobg[disabled]:focus, fieldset[disabled] .wui-button-orange-nobg:focus, .wui-button-orange-nobg.disabled:active, .wui-button-orange-nobg[disabled]:active, fieldset[disabled] .wui-button-orange-nobg:active, .wui-button-orange-nobg.disabled.active, .wui-button-orange-nobg[disabled].active, fieldset[disabled] .wui-button-orange-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-green-nobg {  color: #4BB402;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg:hover {  color: #66BC2A;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-green-nobg.wui-button-label:hover {  color: #4BB402;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg.disabled, .wui-button-green-nobg[disabled], fieldset[disabled] .wui-button-green-nobg, .wui-button-green-nobg.disabled:focus, .wui-button-green-nobg[disabled]:focus, fieldset[disabled] .wui-button-green-nobg:focus, .wui-button-green-nobg.disabled:active, .wui-button-green-nobg[disabled]:active, fieldset[disabled] .wui-button-green-nobg:active, .wui-button-green-nobg.disabled.active, .wui-button-green-nobg[disabled].active, fieldset[disabled] .wui-button-green-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-white-nobg {  color: #777;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-white-nobg:hover {  color: #676d70;  border: 1px solid #adadad;  background-color: #fff; }
+.wui-button-white-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-white-nobg.wui-button-label:hover {  color: #777;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-white-nobg.disabled, .wui-button-white-nobg[disabled], fieldset[disabled] .wui-button-white-nobg, .wui-button-white-nobg.disabled:focus, .wui-button-white-nobg[disabled]:focus, fieldset[disabled] .wui-button-white-nobg:focus, .wui-button-white-nobg.disabled:active, .wui-button-white-nobg[disabled]:active, fieldset[disabled] .wui-button-white-nobg:active, .wui-button-white-nobg.disabled.active, .wui-button-white-nobg[disabled].active, fieldset[disabled] .wui-button-white-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-gray-nobg {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-gray-nobg.wui-button-label:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg.disabled, .wui-button-gray-nobg[disabled], fieldset[disabled] .wui-button-gray-nobg, .wui-button-gray-nobg.disabled:focus, .wui-button-gray-nobg[disabled]:focus, fieldset[disabled] .wui-button-gray-nobg:focus, .wui-button-gray-nobg.disabled:active, .wui-button-gray-nobg[disabled]:active, fieldset[disabled] .wui-button-gray-nobg:active, .wui-button-gray-nobg.disabled.active, .wui-button-gray-nobg[disabled].active, fieldset[disabled] .wui-button-gray-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-red-nobg {  color: #ff4e00;  border: 1px solid #df4400;  background-color: #fff; }
+.wui-button-red-nobg:hover {  color: #e74700;  border: 1px solid #c63d00;  background-color: #fff; }
+.wui-button-red-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-red-nobg.wui-button-label:hover {  color: #ff4e00;  border: 1px solid #df4400;  background-color: #fff; }
+.wui-button-red-nobg.disabled, .wui-button-red-nobg[disabled], fieldset[disabled] .wui-button-red-nobg, .wui-button-red-nobg.disabled:focus, .wui-button-red-nobg[disabled]:focus, fieldset[disabled] .wui-button-red-nobg:focus, .wui-button-red-nobg.disabled:active, .wui-button-red-nobg[disabled]:active, fieldset[disabled] .wui-button-red-nobg:active, .wui-button-red-nobg.disabled.active, .wui-button-red-nobg[disabled].active, fieldset[disabled] .wui-button-red-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+.wui-button-purple-nobg {  color: #9C80C9;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg:hover {  color: #B099D4;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-purple-nobg.wui-button-label:hover {  color: #9C80C9;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg.disabled, .wui-button-purple-nobg[disabled], fieldset[disabled] .wui-button-purple-nobg, .wui-button-purple-nobg.disabled:focus, .wui-button-purple-nobg[disabled]:focus, fieldset[disabled] .wui-button-purple-nobg:focus, .wui-button-purple-nobg.disabled:active, .wui-button-purple-nobg[disabled]:active, fieldset[disabled] .wui-button-purple-nobg:active, .wui-button-purple-nobg.disabled.active, .wui-button-purple-nobg[disabled].active, fieldset[disabled] .wui-button-purple-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+/**************** 各种尺寸的按钮 ******************/
+.wui-button {  height: 28px;  line-height: 28px;  padding-left: 18px;  padding-right: 18px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button {  height: 30px;  line-height: 28px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button {  height: 30px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+.wui-button-l {  height: 32px;  line-height: 32px;  padding-left: 16px;  padding-right: 16px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button-l {  height: 34px;  line-height: 32px;  padding-left: 12px;  padding-right: 12px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button-l {  height: 34px;  line-height: 30px;  padding-left: 16px;  padding-right: 16px;  font-size: 14px;  border-radius: 3px; }
+.wui-button-xl {  height: 36px;  line-height: 36px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+input.wui-button-xl {  height: 38px;  line-height: 36px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+button.wui-button-xl {  height: 38px;  line-height: 34px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+.wui-button-m {  height: 26px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button-m {  height: 28px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button-m {  height: 28px;  line-height: 24px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+.wui-button-s {  height: 22px;  line-height: 22px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+input.wui-button-s {  height: 24px;  line-height: 22px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+button.wui-button-s {  height: 24px;  line-height: 20px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+.wui-button-xs {  height: 18px;  line-height: 18px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+input.wui-button-xs {  height: 20px;  line-height: 18px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+button.wui-button-xs {  height: 20px;  line-height: 16px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+/**************** 无边框 ******************/
+.wui-button-noborder {  border: 0 none !important; }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Button End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>form Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/**************** wui-label  ******************/
+.wui-label {  float: left;  width: 170px;  margin-left: -180px;  padding-top: 5px;  text-align: right;  font-size: 14px; }
+.wui-form-detaillist .wui-label {  color: #8d8d8d; }/*改变键的颜色，推荐放在form上*/
+.wui-form-required {  color: #FF0000;  font-family: SimSun;  font-size: 14px;  margin-right: 6px; }/*必填项的星号标志*/
+/**************** wui-input  ******************/
+.wui-input {  padding: 7px 9px;  line-height: 18px;  border: 1px solid #c1c1c1;  color: #595959;  font-size: 12px;  vertical-align: middle;  border-radius: 3px; }
+.wui-input.wui-input-l {  width: 300px; }
+.wui-input.wui-input-xl {  width: 350px; }
+.wui-input.wui-input-xxl {  width: 400px; }
+.wui-input.wui-input-xxxl {  width: 500px; }
+.wui-input.wui-input-m {  width: 200px; }
+.wui-input.wui-input-mm {  width: 130px; }
+.wui-input.wui-input-sm {  width: 100px; }
+.wui-input.wui-input-xsm {  width: 80px; }
+.wui-input.wui-input-xxsm {  width: 60px; }
+.wui-input.wui-input-xxxsm {  width: 40px; }
+.wui-input.wui-input-s {  padding: 5px 9px; }/*上下边距比其它input小*/
+.wui-input-checkcode {  width: 100px;  height: 24px;  line-height: 28px;  margin: 0;  padding: 2px 5px; }/*上下边距比其它input小*/
+/**************** wui-textarea  ******************/
+.wui-textarea {  line-height: 15px;  border: 1px #c1c1c1 solid;  padding: 7px 9px;  overflow: auto;  font-family: Arial;  font-size: 12px;  width: 300px;  height: 50px;  border-radius: 3px; }
+.wui-textarea.wui-input-l {  width: 300px; }
+.wui-textarea.wui-input-xl {  width: 350px; }
+.wui-textarea.wui-input-xxl {  width: 400px; }
+.wui-textarea.wui-input-xxxl {  width: 500px; }
+.wui-form .wui-textarea.wui-textarea-l {  width: 580px;  height: 60px; }
+/**************** wui-textarea 和 wui-input 的disabled、readonly、hover、focus样式 ******************/
+.wui-input[disabled],
+.wui-textarea[disabled] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input:disabled,
+.wui-textarea:disabled {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input[readonly],
+.wui-textarea[readonly] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input:hover,
+.wui-textarea:hover,
+.wui-input-hover {  border: 1px #aaaaaa solid;  border-top-color: #808080; }
+.wui-input:focus,
+.wui-textarea:focus,
+.wui-input-focus {  border: 1px #07f solid;  box-shadow: 0 0 3px #8cddff;  color: #595959; }
+.placeholder {  color: #ccc; }/*可以用于改变输入框的默认显示的样式，或者改变文本的颜色*/
+
+/**************** 设置 wui-textarea 、 wui-input 和 说明文字 默认显示为hover、focus、样式(只是外观，没有对应属性) ******************/
+.wui-form-item-hover .wui-input,
+.wui-form-item-hover .wui-textarea {  border: 1px #727272 solid; }
+.wui-form-item-focus .wui-input,
+.wui-form-item-focus .wui-textarea {  border: 1px #07f solid;  box-shadow: 0 0 3px #8cddff; }
+.wui-form-item-focus .wui-form-explain,
+.wui-form-item-hover .wui-form-explain {  color: #333; }
+/**************** 复选框，单选框，下拉选择 ******************/
+input.wui-checkbox {  vertical-align: baseline; }
+.wui-checkbox-label{  cursor: pointer;  }
+.wui-form-inputcon {  display: inline-block;  margin-top: 6px;  *display: inline;  *zoom: 1; }
+.wui-form-inputcon label {  margin-right: 20px;  cursor: pointer;  }
+.wui-form .wui-radio {  margin-right: 3px;  vertical-align: middle; }
+/**************** 表单 常用文字 ******************/
+.wui-form-text {  display: inline-block;  margin-top: 6px;  font-size: 14px;  *display: inline;  *zoom: 1; }
+.wui-form-explain {  margin: 0;  padding: 0 0 8px;  font-size: 12px;  color: #B2B2B2; }
+.wui-form-prompt {  margin: 0;  padding: 8px 0 0;  font-size: 12px;  color: #B2B2B2; }
+.wui-form-other {  margin-left: 8px;  color: #999999; }
+/**************** form标签相关的类名 ******************/
+.wui-form {  font-size: 12px;  line-height: 1.5; }
+.wui-form.wui-form-detaillist {  font-size: 14px; }
+.wui-form, .wui-form * {  list-style: none; }
+.wui-form fieldset {  border: 0;}
+.wui-form-fieldeset{   padding: 15px;}
+.wui-form legend {  display: none; }
+.wui-form-item:after {  clear: both;  content: '.';  display: block;  height: 0;  visibility: hidden; }
+.wui-form-item {  padding: 0 5px 20px 170px;  zoom: 1; }
+.wui-form-item .wui-button.wui-button-xl {  padding: 0 40px; }
+.wui-form-item .wui-button.wui-button-l {  padding: 0 40px; }
+.wui-form-item select {  vertical-align: middle;  margin: 4px 0 0; }
+.wui-form-item input {  vertical-align: middle; }
+.wui-form-item .wui-input {  color: #595959;  vertical-align: middle;  *vertical-align: -5px; }
+.wui-form .wui-form-item {  padding-bottom: 10px; }
+.wui-form .wui-form-item.wui-form-item-bg {  background: #F4F5F9;  padding-top: 10px; }
+
+/**************** 大号 wui-input ******************/
+.wui-form-large .wui-input {  font-size: 14px;  height: 18px;  line-height: 18px;  padding: 11px 10px; }
+.wui-form-large .wui-input {  padding-top: 12px; }
+/**************** 垂直 显示 表单 ******************/
+.wui-form.wui-form-vertical .wui-form-item {  padding: 0 5px 20px 0; }
+.wui-form.wui-form-vertical .wui-form-item.wui-form-btncenter {  text-align: center; }
+.wui-form.wui-form-vertical .wui-label {  display: block;  float: none;  width: auto;  text-align: left; margin-left: 0;  margin-bottom: 6px; }
+.wui-form.wui-form-vertical .wui-label .wui-sub-label {  font-size: 12px;  color: #999999; }
+.wui-form.wui-form-vertical .wui-label small {  margin-left: 10px;  color: #999999; }
+.wui-form label .wui-label-sub {  color: #999999 margin-left: 20px; }
+/**************** 表单 标题 ******************/
+.wui-form fieldset legend.fieldset-legend {  display: block;  width: 100%;  font-size: 14px;  font-weight: 700;  height: 40px;  line-height: 40px;  padding: 15px 0 0;  border: 0 none;  border-bottom: 1px dotted #ccc;  margin-bottom: 10px; }
+.wui-form fieldset legend.fieldset-legend-first {  display: block;  width: 100%;  font-size: 14px;  font-weight: 700;  height: 40px;  line-height: 40px;  border: 0 none;  border-bottom: 1px dotted #ccc;  margin-bottom: 10px; }
+.wui-form fieldset legend small {  margin-left: 20px;  margin-right: 20px;  color: #999999;  font-weight: 400; }
+.wui-form fieldset legend.fieldset-legend .wui-form-sublegend {  margin-left: 20px; }
+.wui-form fieldset legend.fieldset-legend-first .wui-form-sublegend {  margin-left: 20px; }
+.wui-form .wui-fieldset-con {  padding-left: 20px; }
+/**************** 表单 下拉选择 ******************/
+.wui-form .wui-form-select {  padding: 2px;  margin-top: 0;  line-height: 34px;  height: 34px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form .wui-form-select-m {  padding: 2px;  margin-top: 0;  line-height: 24px;  height: 24px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form select[disabled] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-form select:disabled {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-form-selector {  padding: 2px;  line-height: 32px;  height: 32px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out;  cursor: pointer;  }
+/**************** 表单的分组 ******************/
+.wui-form .wui-form-group:not(:last-child) {  margin-bottom: 10px; }
+.wui-form .wui-form-group .wui-form-group-title {  background-color: #e7e7e7; }
+.wui-form .wui-form-group-title label {  display: block;  height: 40px;  line-height: 40px;  padding-left: 20px;  cursor: pointer;  font-size: 14px;  font-weight: 700; }
+.wui-form .wui-form-group-title label small {  margin-left: 10px;  color: #777777; }
+.wui-form .wui-form-group-con {  padding-left: 20px;  padding-top: 10px; }
+/**************** 表单按钮区域 ******************/
+.wui-form .wui-fieldset-con-btns {  padding-left: 20px; border-top:1px dotted #ccc; padding-top: 10px; }
+.wui-form .wui-fieldset-con-btns .wui-button-l{padding: 0 40px;}
+.wui-form .wui-form-controls .wui-form-controls-group:not(:first-child) {  margin-top: 10px; }
+.wui-form .wui-form-controls .wui-form-controls-group-con {  margin-top: 8px;  margin-left: 18px; }
+/*.wui-form .wui-form-label-vertical label {  display: block;  margin-bottom: 10px; }*/
+/**************** wui-form-item-error 相关的 ******************/
+.wui-form-item-error .wui-input,
+.wui-form-item-error .wui-textarea {  border: 1px #F00 solid;  color: #F00; }
+.wui-form-item-error .wui-input-reset {  border: 1px #9C9C9C solid;  color: #000; }
+.wui-form-item-error .wui-form-explain {  color: #FF5243; }
+.wui-form-item-error .wui-form-explain .iconfont {  font-size: 16px; }
+.wui-form-item-error .wui-form-select {  padding: 2px;  line-height: 32px;  height: 32px;  vertical-align: middle;  border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form-item-error .wui-form-select-m {  padding: 2px;  line-height: 24px;  height: 24px;  vertical-align: middle;  border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+/**************** for dialog 相关的 ******************/
+.wui-form-dia-bottom-btns{  padding: 16px 0;  text-align: center;  background-color:#F4F5F9;  }
+.wui-form-dia-bottom-btns .wui-button{  padding: 0 40px; }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>form End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>list Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* list 样式模块 */
+.wui-list {  margin: 0;  padding: 10px;  list-style: square inside;  }
+/* 默认有方角 */
+.wui-list-item {  font-size: 12px;  line-height: 20px;  }
+.wui-list-item a {  line-height: 20px;  text-decoration: none;  color: #08c;  }
+.wui-list-item a,
+.wui-list-item span.wui-list-item-text {  font-size: 12px;  vertical-align: middle;  }
+.wui-list-item a:hover {  text-decoration: underline;  }
+/* 灰色小方角 */
+.wui-list-gray .wui-list-item {  color: #808080;  }
+/* 灰色小方角＋灰色链接 */
+.wui-list-graylink .wui-list-item {  color: #808080;  }
+.wui-list-graylink .wui-list-item a {  color: #666;  }
+/* 没有小图标的 */
+.wui-list-nosquare {  list-style: none;  +list-style-position:outside;  }
+/* wui-dlist */
+.wui-dlist {  color: #808080;  font-size: 14px;  line-height: 2.2;  }
+.wui-dlist-tit {  float: left;
+    width: 20%;/* 默认值, 具体根据视觉可改 */
+    text-align: right;  margin: 0;  }
+.wui-dlist-det {  float: left;
+    width: 80%;/* 默认值，具体根据视觉可改 */
+    text-align: left;  margin: 0;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>list End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>page-toolbar Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*基础的toolbar*/
+.wui-toolbar {  position: relative; }
+.wui-toolbar .wui-toolbar-filters {  min-height: 32px; }
+.wui-toolbar.wui-toolbar-bg {  padding: 10px 20px 0px;  min-height: 31px;  line-height: 1em;  border-bottom: 1px solid #e7e7eb;  background: #f4f5f9;  box-shadow: none; }
+.wui-toolbar.wui-toolbar-bg-topborder {  padding: 10px 20px 0px;  min-height: 31px;  line-height: 1em;  border-top: 1px solid #e7e7eb;  border-bottom: 1px solid #e7e7eb;  background: #f4f5f9;  box-shadow: none; }
+.wui-toolbar.wui-toolbar-noborder {  border-bottom: 0 none; }
+.wui-toolbar .wui-toolbar-filters .filter-bar {  margin-bottom: 10px; }
+.wui-toolbar .filter-con {  float: left;  margin-right: 30px; }
+.wui-toolbar .filter-lable {  font-size: 14px;  margin-right: 10px;  float: left;  line-height: 32px;  text-align: right; /* min-width: 40px;*/ }
+.wui-toolbar .filter-lable:not(:first-child) {  margin-left: 30px; }
+.wui-toolbar .filter-labletext {  font-size: 14px;  float: left;  line-height: 32px; }
+.wui-toolbar .filter-section {  margin: 0;  margin-right: -1px;  font-size: 14px;  float: left; }
+.wui-toolbar .filter-select .filter-item {  float: left;  margin-left: -1px; }
+.wui-toolbar .filter-select .filter-item a {  display: block;  padding: 0 10px;  height: 28px;  border: 1px solid #e6e7ec;  background: #fff;  line-height: 28px;  color: #222;  text-align: center; }
+.wui-toolbar .filter-select .filter-item a:hover {  background: #e6e7ec;  border-color: #dadbe0;  text-decoration: none; }
+.wui-toolbar .filter-select .filter-item.active a {  color: #459ae9;  cursor: default; }
+/*button-item*/
+.filter-button-item {  display: inline-block;  padding: 4px 12px;  margin: 0;  line-height: 20px;  color: #333333;  text-align: center;  cursor: pointer;  border: 1px solid #cccccc;  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);  border-color: #cacaca #cacaca #cacaca;  border-bottom-color: #b3b3b3;  border-radius: 2px;  background-color: #f5f5f5;  background-repeat: repeat-x;  -webkit-transition: all 0.1s linear;  -moz-transition: all 0.1s linear;  -o-transition: all0 .1s linear;  transition: all 0.1s linear;  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);  vertical-align: middle;  outline: 0; }
+.wui-toolbar .filter-buttons .filter-button-item {  margin-left: -1px;  border-radius: 0;  color: #222222;  box-shadow: none;  text-shadow: none;  padding: 0 22px;  height: 32px;  line-height: 30px;  font-size: 14px;  background-color: #ffffff;  min-width: 74px;  border-color: #e6e7ec;  float: left; }
+.wui-toolbar .filter-buttons .filter-button-item.current {  color: #459ae9; }
+/*输入框-默认-小-大*/
+.filter-form .filter-form-input-text {  display: inline-block;  position: relative;  height: 28px;  line-height: 28px;  vertical-align: middle;  width: 140px;  font-size: 14px;  padding: 0 10px;  border: 1px solid #e7e7eb;  box-shadow: none;  -moz-box-shadow: none;  -webkit-box-shadow: none;  border-radius: 0;  -moz-border-radius: 0;  -webkit-border-radius: 0;  background-color: #fff; }
+.filter-form .filter-form-input-text.filter-input-s {  width: 80px; /* firefox 19+ */  /* Internet Explorer 10+ */ }
+.filter-form .filter-form-input-text.filter-input-s::-webkit-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-text.filter-input-s::-moz-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-text.filter-input-s:-ms-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-text.filter-input-l {  width: 200px; /* firefox 19+ */  /* Internet Explorer 10+ */ }
+.filter-form .filter-form-input-text.filter-input-l::-webkit-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-text.filter-input-l::-moz-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-text.filter-input-l:-ms-input-placeholder {  font-size: 12px; }
+.wui-toolbar .wui-button .iconfont ,
+.wui-toolbar .wui-toolbar-help .iconfont {  font-size: 16px; }
+/*居右和帮助*/
+.wui-toolbar .wui-toolbar-act {  height: 40px;  margin-top: -42px;  text-align: right; }
+.wui-toolbar .wui-toolbar-help {  height: 30px;  position: absolute;  top: 15px;  right: 20px;  font-size: 14px; }
+.wui-toolbar .wui-toolbar-help a {  text-decoration: none; }
+.wui-toolbar .wui-toolbar-help a:hover {  text-decoration: underline; }
+/*下拉选择*/
+.wui-toolbar .filter-dropdown {  margin: 0;  margin-right: -1px;  font-size: 14px;  float: left;  display: block;  padding-left: 10px;  height: 28px;  border: 1px solid #e6e7ec;  background: #fff;  line-height: 28px;  color: #222;  cursor: pointer; }
+.wui-toolbar .filter-dropdown .filter-dropdown-con {  min-width: 76px;  padding: 0;  color: #222;  border: 0;  display: inline-block;  vertical-align: top; }
+.wui-toolbar .filter-dropdown .filter-dropdown-icon {  width: 30px;  height: 27px;  line-height: 27px;  display: inline-block;  text-align: center;  font-size: 16px;  margin-left: -4px; }
+/*日期选择*/
+.filter-form .filter-form-date {  position: relative; }
+.filter-form .filter-form-date:after {  content: "\e6c8";  font-family: "iconfont";  position: absolute;  top: 9px;  right: 10px;  color: #666666;  font-size: 16px; }
+.filter-form .filter-form-input-date {  display: inline-block;  position: relative;  height: 28px;  line-height: 28px;  vertical-align: middle;  width: 140px;  font-size: 14px;  padding: 0 10px;  border: 1px solid #e7e7eb;  box-shadow: none;  -moz-box-shadow: none;  -webkit-box-shadow: none;  border-radius: 0;  -moz-border-radius: 0;  -webkit-border-radius: 0;  background-color: #fff; }
+.filter-form .filter-form-input-date.filter-input-s {  width: 80px; /* firefox 19+ */  /* Internet Explorer 10+ */ }
+.filter-form .filter-form-input-date.filter-input-s::-webkit-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-s::-moz-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-s:-ms-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-l {  width: 200px; /* firefox 19+ */  /* Internet Explorer 10+ */ }
+.filter-form .filter-form-input-date.filter-input-l::-webkit-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-l::-moz-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-l:-ms-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-xl {  width: 250px; /* firefox 19+ */  /* Internet Explorer 10+ */ }
+.filter-form .filter-form-input-date.filter-input-xl::-webkit-input-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-xl::-moz-placeholder {  font-size: 12px; }
+.filter-form .filter-form-input-date.filter-input-xl:-ms-input-placeholder {  font-size: 12px; }
+/*其它*/
+.wui-toolbar .filter-con .filter-btns-grup {  float: left; }
+.wui-toolbar .filter-selector {  padding: 2px;  margin-top: 0;  line-height: 30px;  height: 30px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out;  border-radius: 0; }
+.wui-toolbar .filter-con .wui-select {  vertical-align: middle; }
+.wui-toolbar .filter-con .wui-select .wui-select-label {  height: 28px; }
+.wui-search-group-bg {  padding: 10px;  background: #f4f5f9; }
+.wui-search-item {  display: inline-block;  margin: 0 10px 0 0; }
+.wui-search-input {  width: 60px;  height: 17px;  padding: 2px 5px;  line-height: 17px;  vertical-align: middle; }
+.wui-search-input.wui-search-input-lag {  width: 120px; }
+.wui-search-item label {  display: inline-block;  text-align: right; }
+.wui-search-group .wui-seach-btns {  padding-left: 12px;  margin-top: 5px; }
+/*# sourceMappingURL=page-toolbar.css.map */
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>page-toolbar End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>paging Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.wui-paging {  margin-top: 20px;  }
+.wui-paging, .wui-paging input.wui-paging-num {  color:#808080;  padding: 0;  zoom: 1;  font-size: 12px;  vertical-align: middle;  }
+.wui-paging.wui-paging-tac{  text-align: center;  }
+.wui-paging.wui-paging-tar{  text-align: right;  }
+.wui-paging:after {  clear: both;  content: " ";  display: block;  font-size: 0;  height: 0;  visibility: hidden;  }
+.wui-paging a, .wui-paging span,
+.wui-paging span.wui-paging-prev,
+.wui-paging span.wui-paging-next {  text-decoration:none;  color:#808080;  margin:0 3px;  display: inline-block;  *display: inline;  *zoom: 1;  vertical-align: middle;  height:22px;  line-height:22px;  }
+.wui-paging-prev,
+.wui-paging-next,
+.wui-paging-goto {  background-color: #f6f6f6;  padding:0 8px;  border: 1px solid #ccc;  border-radius: 3px;  }
+.wui-paging .wui-paging-goto{vertical-align: middle;   line-height: 20px; line-height: 22px\0;  margin-left: 5px;  height: 22px;}
+.wui-paging-prev:hover,
+.wui-paging-next:hover,
+.wui-paging-goto:hover {  border-color: #999;  color: #666;  }
+.wui-paging-prev:hover .iconfont,
+.wui-paging-next:hover .iconfont {  color: #666;  }
+.wui-paging .wui-paging-prev {  margin: 0 3px 0 0;  }
+.wui-paging .iconfont {  font-size: 12px;  color: #787878;  }
+.wui-paging a.wui-paging-item,.wui-paging span.wui-paging-item {  background-color:#f3f3f3;  font-weight:bold;  padding:0 8px;  border:none;  }
+.wui-paging a.wui-paging-current,.wui-paging span.wui-paging-current, .wui-paging a.wui-paging-item:hover {  color:#fff;  background:#ff9c00;  }
+a.wui-paging-prev:hover,
+a.wui-paging-next:hover {  text-decoration:none;  color:#666;  }
+.wui-paging-info {  line-height:24px;  margin-right:5px;  height:24px; vertical-align: middle;  }
+.wui-paging-total {  margin:0 15px 0 0; display: inline-block;  height: 24px;  line-height: 24px;  font-weight:400;  }
+.wui-paging-pagesize{ margin:0 15px 0 0; display: inline-block;  height: 24px;  line-height: 24px;  font-weight:400;}
+.wui-paging-pagesize select.wui-paging-pagesize-select{  }
+.wui-paging-ellipsis {  margin:0 5px;  line-height: 16px;  font-weight:bold;  }
+.wui-paging-which{display: inline-block;}
+.wui-paging-which input.wui-paging-num {  height: 20px;  line-height: 20px;  padding: 0 6px;  width:22px;  border:1px solid;  border-color:#aaa #d1d1d1 #d1d1d1 #aaa;  }
+.wui-paging-which input.wui-paging-num:hover {  border-color:#999;  color:#666;  }
+.wui-paging-bold {  font-weight:bold;  padding:0 8px;  }
+.wui-paging span.wui-paging-prev,
+.wui-paging span.wui-paging-next,
+.wui-paging span.wui-paging-prev .iconfont,
+.wui-paging span.wui-paging-next .iconfont {  color:#fff;  box-shadow:none;  background: #d4d4d4;  border-color: #d4d4d4;  filter: none;  }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>paging End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tab-nav Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/**************** 水平的导航 ******************/
+.tab-primary-navs{line-height: 40px; position:relative;background-color: #eaeaea;border-top: 1px solid #e5e5e5;}
+.tab-primary-navs .tab-primary-nav-item{float:left;  position:relative;}
+.tab-primary-navs:before { content: "";  display: table;  }
+.tab-primary-navs:after { content: "";  display: table; clear: both;  }
+.tab-primary-navs .tab-primary-nav-item a{display: block; padding: 0 30px; border-right: 1px solid #e5e5e5;line-height: 44px; font-size: 14px;  height: 44px;    color: #222;}
+.tab-primary-navs .tab-primary-nav-item a:hover{  background-color:#f2f2f2;  text-decoration: none;}
+.tab-primary-navs .tab-primary-nav-item a.selected{  background-color:#FFFFFF;margin-bottom: -1px;}
+/**************** 水平的二级导航 ******************/
+.tab-secondary-navs {line-height: 46px;border-bottom: 1px solid #e7e7eb;height: 48px}
+.tab-secondary-nav-item {  float: left;font-size: 14px;margin-bottom: -1px; text-align: center;}
+.tab-secondary-navs .tab-secondary-nav-item a {padding: 0 20px; display: block; height: 46px;  text-decoration: none;color: #222;}
+.tab-secondary-navs .selected ,
+.tab-secondary-navs .tab-secondary-nav-item a.selected:hover{background: 0;border-bottom: 3px solid #44b549}
+.tab-secondary-navs .tab-secondary-nav-item a:hover {border-bottom: 3px solid #a0a3ab}
+/**************** 水平的tab标签 ******************/
+.wui-tab {  margin: 0;  padding: 0;  }
+.wui-tab ul {  list-style: none;  margin: 0;  padding: 0;  }
+.wui-tab li {  list-style: none;  vertical-align: top;  position: relative;  top: 1px;  }
+.wui-tab-items {  border-bottom: 1px solid #E5E5E5;  font-size: 14px;  }
+.wui-tab-item {  display: inline-block;  display: inline\0; /* fix https://github.com/aliceui/tab/issues/1 */  *display: inline;  *zoom: 1;  *margin-right: 4px;  }
+.wui-tab-item a {  border-radius: 3px 3px 0 0;  background: #fff;  line-height: 32px;  height: 32px;  padding: 0 10px;  border: 1px solid #E5E5E5;
+    border-bottom: none;  color: #4D4D4D;  display: inline-block;  *display: inline;  *zoom: 1;  transition: background-color 0.4s ease-out, color 0.4s ease-out;  }
+.wui-tab-item a,
+.wui-tab-item a:hover,
+.wui-tab-item a:active {  color: #4D4D4D;  }
+.wui-tab-item-current a {  font-weight: bold;  height: 33px;  }
+.wui-tab-item a:hover {  background: #f6f6f6;  text-decoration: none;  }
+.wui-tab-item-current a:hover {  background: #fff;  }
+.wui-tab.wui-tab-s .wui-tab-items{  font-size: 12px;}
+.wui-tab.wui-tab-s .wui-tab-item a{line-height: 28px;  height: 28px;  padding: 0 6px;}
+.wui-tab.wui-tab-s .wui-tab-item-current a {  font-weight: bold;  height: 29px;  }
+/**************** 垂直的导航 ******************/
+.menu{width: 208px;  min-width: 208px; /*border-right: 1px solid #D7D8DE;*/min-height: 1px;background-color:#3d3d3d; }
+.menu-item{border-top: 1px solid #4a4a4a;}
+.menu-item .menu-title {position: relative;font-size: 14px; width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;line-height: 38px;color: #e1e1e1;}
+.menu-item .menu-title h3{padding-left: 20px;padding-right:10px;}
+.menu-item .menu-title .iconfont{display: inline-block;width: 24px;text-align: center; }
+.menu-item  a {font-size: 14px;display: block;padding-left: 20px;width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;color: #bdbdbd;line-height: 38px;}
+.menu-item  .menu-sub a{ padding: 0 0 0 48px;}
+.menu-item a:hover {background: #474747 !important;}
+.menu-item a:hover {text-decoration: none}
+.menu-item a.active,.menu-item  a.active:hover{background-color: #FF8800 !important;color: #FFFFFF;}
+/**************** 底部的导航 ******************/
+#footer{  padding: 24px 0;color: #999999;text-align: center;background-color: #d8d8dc;  border-top: 1px solid #d9dadc;}
+#footer .links .links-item{display: inline-block;vertical-align: middle;padding: 0 1em;line-height: 1em;border-left: 1px solid #d9dadc;}
+#footer .links .no-extra {border-left-width: 0;}
+#footer .links-item a {color: #999999}
+#footer .links-item a:hover {color: #666666}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tab-nav End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>table Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* alice/table 样式模块 */
+.wui-table-title {  color: #666;  background-color: #F6F6F6;  padding: 7px 9px;  border-top: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9;  border-left: 1px solid #d9d9d9; }
+.wui-table {  border-collapse: collapse;  border: 1px solid #ccc;  width: 100%;  font-size: 12px;  text-align: left; }
+.wui-table tr {  color: #808080; }
+.wui-table thead tr {  color: #666; }
+.wui-table thead {  color: #666;  background-color: #F6F6F6;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F8F8', endColorstr='#F2F2F2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+    background: -moz-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -o-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: linear-gradient(top, #F8F8F8, #F2F2F2); }
+.wui-table th {  padding: 7px 9px;  border-bottom: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9;  text-align: left; }
+.wui-table td {  padding: 8px 9px 7px;  border-bottom: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9; }
+.wui-table th {  padding: 7px 9px; }
+.wui-table tfoot td {  border-bottom: none; }
+/*隔行变色*/
+.wui-table tr:nth-child(even),
+.wui-table-split,
+.wui-table-hover {  background-color: #FBFBFB; }
+.wui-table tbody tr:hover{background-color: #fcf8e3;}
+/*左右无边框*/
+.wui-table.wui-table-noborder-lr {  border-left: 0 none;  border-right: 0 none; }
+.wui-table.wui-table-noborder-lr td:last-child,
+.wui-table.wui-table-noborder-lr th:last-child {  border-right: 0 none; }
+/*内部元素无边框*/
+.wui-table.wui-table-item-noborder-lr td,
+.wui-table.wui-table-item-noborder-lr th {  border-right: 0 none; }
+/* 无边框table加上wui-table-noborder */
+.wui-table-noborder,
+.wui-table-noborder td,
+.wui-table-noborder tr,
+.wui-table-noborder th {  border: none;  outline: none; }
+.wui-table-noborder .wui-table-split,
+.wui-table-noborder .wui-table-hover {  background-color: #f7f7f7; }
+/* 当table放在一个有边框的容器中时，比如wui-box，需要添加类名wui-table-inbox去掉本身的外框 */
+.wui-table-inbox {  border: none;  outline: none; }
+.wui-table-inbox td:last-child,
+.wui-table-inbox tr:last-child,
+.wui-table-inbox th:last-child {  border-right: 0 none; }
+.wui-table-inbox tr:last-child td {  border-bottom: 0 none; }
+/*表格的微调*/
+.wui-table-bar {  color: #666;  background-color: #F6F6F6;  padding: 7px 9px; }
+.wui-table .wui-table-subcon {  margin-top: 5px; }
+.wui-table td.wui-table-tar,
+.wui-table th.wui-table-tar {  text-align: right; }
+.wui-table .null-list {  text-align: center;  padding: 20px; }
+.wui-table .null-list .tip-icon {  color: #00AAEE;  font-size: 22px;  line-height: 22px; }
+.wui-table .table-tipbox-wrap {  padding: 0; }
+.wui-table-layout-fixed {  table-layout: fixed; }
+.wui-table .wui-list{position: relative;  margin: -9px; padding: 5px 0;}
+.wui-table .wui-list-item{border-bottom: 1px solid #d5d5d5;line-height: 2.2;padding:0 9px;}
+.wui-table .wui-list-item:last-child{border-bottom: 0 none;}
+.wui-table .wui-to-top{vertical-align: top;}
+/*表格分组*/
+.table-btn-group{ margin-top: 3px;}
+.table-btn-group .wui-button{ margin-top: 2px;}
+/*.vertical-align-middle{}*/
+.wui-table .check-td{text-align: center;}
+.wui-table .check-td input{vertical-align: middle;cursor: pointer;}
+/*微调宽度*/
+.w-2{width: 2%;}
+.w-3{width: 3%;}
+.w-4{width: 4%;}
+.w-5{width: 5%;}
+.w-6{width: 6%;}
+.w-7{width: 7%;}
+.w-8{width: 8%;}
+.w-9{width: 9%;}
+.w-11{width: 11%;}
+.w-12{width: 12%;}
+.w-13{width: 13%;}
+.w-14{width: 14%;}
+.w-15{width: 15%;}
+.w-16{width: 16%;}
+.w-17{width: 17%;}
+.w-18{width: 18%;}
+.w-19{width: 19%;}
+.w-22{width: 22%;}
+.w-10{width: 10%;}
+.w-20{width: 20%;}
+.w-25{width: 25%;}
+.w-33{width: 33.33333%;}
+.w-50{width: 50%;}
+.w-60{width: 60%;}
+.w-66{width: 66.66667%;}
+.w-70{width: 70%;}
+.w-75{width: 75%;}
+.w-80{width: 80%;}
+.w-90{width: 90%;}
+.w-100{width: 10%;}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>table End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>text-link Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+h1 { font-size: 2.4rem;/*2.4 × 10px = 24px*/}
+.f1 { font-size: 4.8rem; }
+.f2 { font-size: 3.6rem; }
+.f3 { font-size: 2.4rem; }
+.f4 { font-size: 2rem; }
+.f5 { font-size: 1.6rem; }
+.f6 { font-size: 1.4rem; }
+.f7 { font-size: 1.2rem; }
+/*文本及链接颜色*/
+.wui-txt-default {  color: #333333; }
+.wui-txt-info {  color: #808080; }
+.wui-txt-muted {  color: #a6a6a6; }
+.wui-txt-primary {  color: #0e90d2; }
+.wui-txt-primary:visited {  color: #0e90d2; }
+.wui-txt-secondary {  color: #3bb4f2; }
+.wui-txt-secondary:visited {  color: #3bb4f2; }
+.wui-txt-purple {  color: #9C80C9; }
+.wui-txt-purple:visited {  color: #9C80C9; }
+.wui-txt-success {  color: #5eb95e; }
+.wui-txt-success:visited {  color: #5eb95e; }
+.wui-txt-warning {  color: #f37b1d; }
+.wui-txt-warning:visited {  color: #f37b1d; }
+.wui-txt-danger {  color: #dd514c; }
+.wui-txt-danger:visited {  color: #dd514c; }
+a.wui-txt-decoration:hover {  text-decoration: underline;  }
+/*字体大小*/
+.wui-txt-xxs {   font-size: 10px;  display: inline-block;  }
+.wui-txt-xxs .wui-txt-xxs-item{  font-size: 12px;  transform: scale(0.8333);/*缩放，解决chrome浏览器字体不低于12px的限制*/  display: block;  transform-origin:0 88% 0;/*改变缩放基点*/  }
+.wui-txt-xs {    font-size: 12px; }
+.wui-txt-sm {    font-size: 14px; }
+.wui-txt-lg {    font-size: 18px; }
+.wui-txt-xl {    font-size: 24px; }
+.wui-txt-xxl {   font-size: 32px; }
+.wui-txt-xxxl {  font-size: 48px; }
+/*居中和有对齐*/
+.wui-txt-tar{  text-align: right !important;}
+.wui-txt-tac{  text-align: center;}
+/*五彩缤纷的[字体]颜色*/
+.wui-txt-black { color: #000; }
+.wui-txt-near-black { color: #111; }
+.wui-txt-dark-gray { color: #333; }
+.wui-txt-mid-gray { color: #555; }
+.wui-txt-gray { color: #777; }
+.wui-txt-silver { color: #999; }
+.wui-txt-light-silver { color: #aaa; }
+.wui-txt-moon-gray { color: #ccc; }
+.wui-txt-light-gray { color: #eee; }
+.wui-txt-near-white { color: #f4f4f4; }
+.wui-txt-white { color: #fff; }
+.wui-txt-dark-red{color: #e7040f;}
+.wui-txt-red{color: #ff4136;}
+.wui-txt-light-red{color: #ff725c;}
+.wui-txt-orange { color: #ff6300; }
+.wui-txt-gold { color: #ffb700; }
+.wui-txt-yellow { color: #ffd700; }
+.wui-txt-light-yellow { color: #fbf1a9; }
+.wui-txt-purple { color: #5e2ca5; }
+.wui-txt-light-purple { color: #a463f2; }
+.wui-txt-dark-pink { color: #d5008f; }
+.wui-txt-hot-pink { color: #ff41b4; }
+.wui-txt-pink { color: #ff80cc; }
+.wui-txt-light-pink { color: #ffa3d7; }
+.wui-txt-dark-green { color: #137752; }
+.wui-txt-green { color: #19a974; }
+.wui-txt-light-green { color: #9eebcf; }
+.wui-txt-navy { color: #001b44; }
+.wui-txt-dark-blue { color: #00449e; }
+.wui-txt-blue { color: #357edd; }
+.wui-txt-light-blue { color: #96ccff; }
+.wui-txt-lightest-blue { color: #cdecff; }
+.wui-txt-washed-blue { color: #f6fffe; }
+.wui-txt-washed-green { color: #e8fdf5; }
+.wui-txt-washed-yellow { color: #fffceb; }
+.wui-txt-washed-red { color: #ffdfdf; }
+/*五彩缤纷的[背景]颜色*/
+.wui-bg-black { background-color: #000; }
+.wui-bg-near-black { background-color: #111; }
+.wui-bg-dark-gray { background-color: #333; }
+.wui-bg-mid-gray { background-color: #555; }
+.wui-bg-gray { background-color: #777; }
+.wui-bg-silver { background-color: #999; }
+.wui-bg-light-silver { background-color: #aaa; }
+.wui-bg-moon-gray { background-color: #ccc; }
+.wui-bg-light-gray { background-color: #eee; }
+.wui-bg-near-white { background-color: #f4f4f4; }
+.wui-bg-white { background-color: #fff; }
+.wui-bg-transparent { background-color: transparent; }
+.wui-bg-dark-red{background-color: #e7040f;}
+.wui-bg-red{background-color: #ff4136;}
+.wui-bg-light-red{background-color: #ff725c;}
+.wui-bg-orange { background-color: #ff6300; }
+.wui-bg-gold { background-color: #ffb700; }
+.wui-bg-yellow { background-color: #ffd700; }
+.wui-bg-light-yellow { background-color: #fbf1a9; }
+.wui-bg-purple { background-color: #5e2ca5; }
+.wui-bg-light-purple { background-color: #a463f2; }
+.wui-bg-dark-pink { background-color: #d5008f; }
+.wui-bg-hot-pink { background-color: #ff41b4; }
+.wui-bg-pink { background-color: #ff80cc; }
+.wui-bg-light-pink { background-color: #ffa3d7; }
+.wui-bg-dark-green { background-color: #137752; }
+.wui-bg-green { background-color: #19a974; }
+.wui-bg-light-green { background-color: #9eebcf; }
+.wui-bg-navy { background-color: #001b44; }
+.wui-bg-dark-blue { background-color: #00449e; }
+.wui-bg-blue { background-color: #357edd; }
+.wui-bg-light-blue { background-color: #96ccff; }
+.wui-bg-lightest-blue { background-color: #cdecff; }
+.wui-bg-washed-blue { background-color: #f6fffe; }
+.wui-bg-washed-green { background-color: #e8fdf5; }
+.wui-bg-washed-yellow { background-color: #fffceb; }
+.wui-bg-washed-red { background-color: #ffdfdf; }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>text-link End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tipbox Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* tipbox 样式模块 */
+.wui-tipbox {  position: relative;  zoom: 1;  font-size: 12px;  line-height: 22px;  }
+.wui-tipbox.wui-tipbox-innertable{  position: relative;  margin: -9px;  }
+.wui-tipbox .wui-tipbox-icon {  background: #fff;  width: 20px;  height: 20px;  position: absolute;  top: 22px;  left: 36px;  }
+.wui-tipbox-icon .iconfont {  font-size: 36px;  position: absolute;  top: -7px;  left: -7px;  width: 32px;  height: 32px;  line-height: 36px;  text-shadow: 0 1px 0 #fff;  }
+/**************** 提示框的颜色样式 ******************/
+.wui-tipbox-default {  border: 1px solid #e7e7eb;  background: #f4f5f9;  }
+.wui-tipbox-default .wui-tipbox-icon .iconfont {  color: #8d8d8d;  }
+.wui-tipbox-message {  border: 1px solid #b2e2ea;  background: #e5f2f8;  }
+.wui-tipbox-message .wui-tipbox-icon .iconfont {  color: #68b5e2;  }
+.wui-tipbox-success {  border: 1px solid #E1E1CA;  background: #edfed0;  }
+.wui-tipbox-success .wui-tipbox-icon .iconfont {  color: #b5de70;  }
+.wui-tipbox-error {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tipbox-error .wui-tipbox-icon .iconfont {  color: #f17975;  }
+.wui-tipbox-warning {  background: #fefea4;  border: 1px solid #e6e098;  }
+.wui-tipbox-warning .wui-tipbox-icon .iconfont {  color: #ff9966;  }
+.wui-tipbox-stop {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tipbox-stop .wui-tipbox-icon .iconfont {  color: #f17975;  }
+.wui-tipbox-wait {  border: 1px solid #fae3cc;  background: #FFF9D9;  }
+.wui-tipbox-wait .wui-tipbox-icon .iconfont {  color: #d1a066;  }
+.wui-tipbox-question {  border: 1px solid #b2e2ea;  background: #e0f4ff;  }
+.wui-tipbox-question .wui-tipbox-icon .iconfont {  color: #66cae2;  }
+/*.wui-tipbox-white  {  background: #fff;  border: 1px solid transparent;  _border-color:tomato;   *//* fix ie6 dont support border transparent *//*  _filter:chroma(color=tomato);  }*/
+.wui-tipbox-white  {  background: #fff;  border: 1px solid #d8d8d8; }
+/**************** 提示框 右侧内容区域 ******************/
+.wui-tipbox-content {  margin: 14px 0 14px 75px;  }
+.wui-tipbox-content .wui-tipbox-title {  margin: 0;  padding: 0;  }
+.wui-tipbox-explain {  margin: 0;  padding: 0;  color: #808080;  }
+.wui-tipbox-onlycon .wui-tipbox-content{  margin: 14px 14px 14px 20px;  }
+.wui-tipbox-content h3.wui-tipbox-title,
+.wui-tipbox-content-simple h3.wui-tipbox-title {  color: #333;  font-size: 14px;  font-weight: bold;  }
+/**************** 简单说明 一句话说清楚的事 ******************/
+.wui-tipbox-content-simple {  margin: 22px 0 22px 88px;  }
+/**************** 去除边框 ******************/
+.wui-tipbox-noborder{border:0 none !important;  overflow: hidden;}
+/**************** 次级标题 盒子标题 ******************/
+.wui-tipbox-content .wui-tipbox-title .wui-tipbox-subtab{display: inline-block; margin-left: 20px;vertical-align: middle;}
+.wui-tipbox-content  .wui-tipbox-subtab-item{   font-weight: 400;  float: left;  margin-left: -1px;  padding: 0 10px; font-size: 12px; height: 24px;  border: 1px solid #e6e7ec;  background: #fff;  line-height: 24px;  text-align: center;  }
+.wui-tipbox-content .wui-tipbox-title .wui-tipbox-subtab-item:hover{background-color:#e6e7ec; }
+.wui-tipbox-content .wui-tipbox-title .wui-tipbox-subtab-item.current{background-color:#e6e7ec;color: #333333;}
+.wui-tipbox-content .wui-tipbox-title .wui-tipbox-subtab-item:first-child{  -webkit-border-top-left-radius:5px;  -moz-border-radius-topleft:5px;  border-top-left-radius:5px;  -webkit-border-bottom-left-radius:5px;  -moz-border-radius-bottomleft:5px;  border-bottom-left-radius:5px;  }
+.wui-tipbox-content .wui-tipbox-title .wui-tipbox-subtab-item:last-child{  -webkit-border-top-right-radius:5px;  -webkit-border-bottom-right-radius:5px;  -moz-border-radius-bottomright:5px;  -moz-border-radius-topright:5px;  border-top-right-radius:5px;  border-bottom-right-radius:5px;  }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tipbox End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tiptext Star<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/**************** iconfont图标相关 ******************/
+.wui-tiptext {  margin: 0;  color: #4D4D4D;  position:relative;  font-size: 12px;  zoom:1;  }
+.wui-tiptext .iconfont {  font-size: 20px;  line-height: 1em;  text-shadow: 0 1px 0 #fff;  position: relative;  top: 2px;  margin-right: 2px;  }
+.wui-tiptext-icon {  display:inline-block;  *display:inline;  *zoom:1;  }
+.wui-tiptext-message .wui-tiptext-icon {  color: #68b5e2;  }
+.wui-tiptext-success .wui-tiptext-icon {  color: #b5de70;  }
+.wui-tiptext-error .wui-tiptext-icon {  color: #f17975;  }
+.wui-tiptext-warning .wui-tiptext-icon {  color: #ff9966;  }
+.wui-tiptext-question .wui-tiptext-icon {  color: #66cae2;  }
+.wui-tiptext-stop .wui-tiptext-icon {  color: #f17975;  }
+.wui-tiptext-wait .wui-tiptext-icon {  color: #d1a066;  }
+/**************** 区块相关的 ******************/
+.wui-tiptext-container {  padding: 8px 12px;  position:relative;  zoom:1;  }
+.wui-tiptext-follow {  padding-left: 25px;  }
+.wui-tiptext-container.wui-tiptext-container-noboder{ border:0 none !important;}
+.wui-tiptext-container-message {  border: 1px solid #b2e2ea;  background: #e5f2f8;  }
+.wui-tiptext-container-success {  background: #E7FFCE;  border: 1px solid #B9E2A0;  }
+.wui-tiptext-container-error {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tiptext-container-warning {  background: #fefea4;  border: 1px solid #e6e098;  }
+.wui-tiptext-container-question {  border: 1px solid #b2e2ea;  background: #e0f4ff;  }
+.wui-tiptext-container-stop {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tiptext-container-wait{  border: 1px solid #fae3cc;  background: #FFF9D9;  }
+/**************** 箭头相关的 ******************/
+.wui-tiptext-arrowup, .wui-tiptext-arrowup em, .wui-tiptext-arrowup span,
+.wui-tiptext-arrowright, .wui-tiptext-arrowright em, .wui-tiptext-arrowright span,
+.wui-tiptext-arrowleft, .wui-tiptext-arrowleft em, .wui-tiptext-arrowleft span,
+.wui-tiptext-arrowdown, .wui-tiptext-arrowdown em, .wui-tiptext-arrowdown span {
+    position: absolute;  font-size: 14px;  font-family: "SimSun";  font-style: normal;  line-height: 1;  }
+.wui-tiptext-arrowup,
+.wui-tiptext-arrowright,
+.wui-tiptext-arrowleft,
+.wui-tiptext-arrowdown {  height: 10px;  width: 16px;  }
+.wui-tiptext-arrowup {  left: 32px;  top:-7px;  }
+.wui-tiptext-arrowup em {  top: -1px;  }
+.wui-tiptext-arrowright {  right: -9px;  top:10px;  }
+.wui-tiptext-arrowright em {  left:1px;  }
+.wui-tiptext-arrowdown {  left: 32px;  bottom: -3px;  }
+.wui-tiptext-arrowdown em {  top: 1px;  }
+.wui-tiptext-arrowleft {  left: -6px;  top:10px;  }
+.wui-tiptext-arrowleft em {  left:-1px;  }
+/* arrow color*/
+.wui-tiptext-container-message  .wui-tiptext-arrow em {  color:#b2e2ea;  }
+.wui-tiptext-container-message  .wui-tiptext-arrow span {  color:#e5f2f8;  }
+.wui-tiptext-container-success  .wui-tiptext-arrow em {  color:#E1E1CA;  }
+.wui-tiptext-container-success  .wui-tiptext-arrow span {  color:#edfed0;  }
+.wui-tiptext-container-error    .wui-tiptext-arrow em {  color:#fadcd3;  }
+.wui-tiptext-container-error    .wui-tiptext-arrow span {  color:#FDEEE9;  }
+.wui-tiptext-container-warning  .wui-tiptext-arrow em {  color:#e6e098;  }
+.wui-tiptext-container-warning  .wui-tiptext-arrow span {  color:#fefea4;  }
+.wui-tiptext-container-question .wui-tiptext-arrow em {  color:#b2e2ea;  }
+.wui-tiptext-container-question .wui-tiptext-arrow span {  color:#e0f4ff;  }
+.wui-tiptext-container-stop     .wui-tiptext-arrow em {  color:#fadcd3;  }
+.wui-tiptext-container-stop     .wui-tiptext-arrow span {  color:#FDEEE9;  }
+.wui-tiptext-container-wait     .wui-tiptext-arrow em {  color:#fae3cc;  }
+.wui-tiptext-container-wait     .wui-tiptext-arrow span {  color:#FFF9D9;  }
+/**************** 关闭按钮 ******************/
+.wui-tiptext-close {  position: absolute;  right: 10px;  top: -2px;  color: #60A2C5;  cursor: pointer;  }
+/**************** 去除边框 ******************/
+.wui-tiptext-noborder{border:0 none !important;}
+.wui-tiptext-noborder .wui-tiptext-arrow em{    top: 0; left: 0; }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>tiptext End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

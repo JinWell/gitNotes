@@ -1,0 +1,23 @@
+{
+   "can_be_disabled": {
+      "message": "A extensão pode ser desativada pelo Chrome em algumas páginas por motivos de segurança."
+   },
+   "download": {
+      "message": "Transferir"
+   },
+   "ext_description": {
+      "message": "Downloader de música online do Zvooq, Facebook, Vimeo, Tidal, SoundCloud e muitos outros sites"
+   },
+   "ext_name": {
+      "message": "Download gratuito de música"
+   },
+   "files": {
+      "message": "Arquivos de música nesta página"
+   },
+   "not_founded": {
+      "message": "Please try to \u003Cspan>start a playback\u003C/span>\u003C/br>\u003Cspan class=\"small\">This will help us to find video file\u003C/span>\u003Cspan class=\"thank\">Thank you for understanding!\u003C/span>"
+   },
+   "reload_me": {
+      "message": "Please refresh the page one time to enable extension on this page."
+   }
+}

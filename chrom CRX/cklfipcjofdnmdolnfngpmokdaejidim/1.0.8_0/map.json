@@ -1,0 +1,24 @@
+{
+    "res": {
+        "lookup.js": {
+            "uri": "/lookup.js",
+            "type": "js",
+            "deps": [
+                "lookup.css"
+            ]
+        },
+        "options.js": {
+            "uri": "/options.js",
+            "type": "js"
+        },
+        "popup.js": {
+            "uri": "/popup.js",
+            "type": "js"
+        },
+        "zepto.min.js": {
+            "uri": "/zepto.min.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

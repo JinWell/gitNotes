@@ -204,6 +204,16 @@ git oush origin 标签名字
 创建KEY
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_JinWell -C "Chen_JinWell@163.com"
 
+查看GIT项目配置
+git config --list
+
+查看密钥
+ls ~/.ssh
+
+清空ssh
+$ ssh-add -D
+$ ssh-add id_rsa
+$ ssh-add id_rsa_x
 
 
 
