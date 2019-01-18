@@ -1,0 +1,16 @@
+ failed to push some refs to git
+ 
+ 
+创建该项目时显示尝试使用了git for win的客户端离线版，发现不能上传，又在github上重新创建仓库，建立README.md，导致该文件不在本地代码中
+可以通过以下方式解决
+
+git pull --rebase origin master
+
+执行后可以看到本地代码中多了README.md文件
+
+再次执行git push origin master即可完成代码上传
+--------------------- 
+作者：渡口一艘船 
+来源：CSDN 
+原文：https://blog.csdn.net/xsf50717/article/details/48947437 
+版权声明：本文为博主原创文章，转载请附上博文链接！
